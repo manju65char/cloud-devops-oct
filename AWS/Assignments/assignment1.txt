@@ -1,1 +1,47 @@
-list the services ehich comes  under free tier account: 
+list the services which comes  under free tier account:
+
+1) EC2 istances - 750 hours for t2.micro to t3.micro  
+   Duration - 12 months 
+
+2) Lambda - 1 million requests + 400000 GB- seconds compute time 
+   Duration - always free 
+
+3) Elastic - Uses Ec2 and S3 free limits
+   Duration - 12 months
+
+4) Lightsail - 750 instance hours 
+   Duration - 1st months
+
+5) S3 - 5GB Standard storage 
+   Duration - 12 months
+
+6) Elastic block store (EBS) - 30 GB of general purpose ssd
+   Duration - 12 months 
+
+7) Elastic file system (EFS) - 5 GB storage 
+   Duration - 12 months
+
+8) Relational Database Service (RDS) - 750 hours for db.t2.micro to db.t3.micro and 20 GB storage 
+   Duration - 12 months 
+
+9) DynamoDB - 25 GB storage plus 25 read capacity unit (RCU) and 25 write capacity unit (WCU)
+   Duration - life time 
+
+10) CloudFront - 50GB for data transfer and plus 2 million http and https requests 
+    Duration - 1 year
+
+11) Elastic load balance (ELB) - 15GB data and 750 hours 
+    Duration - 1 year 
+
+12) Virtual Private Cloud (VPC) - fully free 
+    Duration - life time 
+
+13) Simple notification service (sns) - 1 million messages but chargeable for sms deliveries plus 1000 Email deliveries
+    Duration - 1 year 
+
+14) Simple Queue Service (SQS) - 1 million request for messages ( send message, Receive, Delete)
+    Duration - 1 year
+
+15) CloudWatch - collect and track the metric up to 10 custom metric, and set alarm up to 10 alarms, 1 million api requests 
+    Duration - life time 
+
