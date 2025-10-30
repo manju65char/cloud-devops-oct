@@ -1,0 +1,49 @@
+LINUX BOOTING PROCESS:
+
+
+1)	BIOS/ UEFI – Power on 
+•	System wakes up and checks all hardware parts ( Ex: Ram, storage device, keyboard)
+•	This process is called Power On Self System (POST)
+•	Then its looks for bootable device like pen drive and hard disk.
+
+2)	GRUB (Boot loader)
+•	GRUB job is to start the operating system.
+•	It shows a menu if you have a multi OS like Windows and linux, We have to choose linux .
+•	Then it loads the Linux kernel into memory.
+
+3)	Kernel Loading 
+•	The Linux kernel is the heart of the OS.
+•	Then it starts working, then it mounts the root file system (/) so system can access the file. 
+•	Then it starts the first program its called system.
+
+4)	Systemd (starting services)
+•	Systemd starts all the background services needed for the system like network and display.
+•	It also mounts other file system and prepares the system for user.
+
+5)	Login Screen 
+•	Finally, the system shows the login prompt.
+•	Enter the password and user name and the shell starts.
+
+
+DIRECTORS AND ITS PURPOSE:
+
+
+/  (root)  -  it is the top level directory, a file and directors starts here.
+/bin ( bin) – Essential user commands needed for system boot and repair (Ex: ls, cp, mv and cat).
+/boot (boot) – Contains  boot loader files like GRUB, kernel images like vmlinuz  and system.
+/dev (dev) – Holds device files ( present hardware devices).
+/etc (etc) – System configuration files and startup scripts (Ex: /etc/passwd, /dev/tty).
+/home (home) – Personal directories for each user.
+/lib (lib) – Shared library files needed by programs in /bin and /sbin.
+/media (media) - Temporary mount point for removable devices (like USBs, CDs).
+/mnt (mnt) - Mount point for temporary mounting of files ystems (manual mounts). 
+/opt (opt) – Optional or third-party software packages (e.g. proprietary apps).
+/proc (proc) - Virtual directory that provides system and process information (e.g. /proc/cpuinfo).
+/root (root) - Home directory for the root (superuser).
+/run (run) - Stores runtime data (like PIDs, sockets) created after boot.
+/sbin (sbin) - System administration commands (e.g. reboot, fsck, ifconfig).
+/srv (srv) - Contains data for services like web or FTP servers.
+/sys (sys) - Virtual directory showing kernel and hardware information (device drivers, etc.).
+/tmp (tmp) - Temporary files (cleared after reboot).
+/usr (usr) - User system resources, it contains most user applications and libraries (/usr/bin, /usr/lib).
+/var (var) - Variable data like logs, spools, and cache (/var/log, /var/tmp).
