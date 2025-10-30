@@ -22,7 +22,7 @@ LINUX BOOTING PROCESS:
 
 5)	Login Screen 
 •	Finally, the system shows the login prompt.
-•	Enter the password and user name and the shell starts.
+•	Enter the password and user name and the shell(bash  --> .bashrc and .bash_profile or .profile) starts.
 
 
 DIRECTORS AND ITS PURPOSE:
@@ -30,20 +30,22 @@ DIRECTORS AND ITS PURPOSE:
 
 /  (root)  -  it is the top level directory, a file and directors starts here.
 /bin ( bin) – Essential user commands needed for system boot and repair (Ex: ls, cp, mv and cat).
+/var (var) - Variable data like logs, spools, and cache (/var/log, /var/tmp).
+/etc (etc) – System configuration files and startup scripts (Ex: /etc/passwd, /dev/tty).
+/opt (opt) – Optional or third-party software packages (e.g. proprietary apps).
+/home (home) – Personal directories for each user.
+/tmp (tmp) - Temporary files (cleared after reboot).
+/usr (usr) - User system resources, it contains most user applications and libraries (/usr/bin, /usr/lib).
+/lib (lib) – Shared library files needed by programs in /bin and /sbin.
+/mnt (mnt) - Mount point for temporary mounting of files ystems (manual mounts). 
+
 /boot (boot) – Contains  boot loader files like GRUB, kernel images like vmlinuz  and system.
 /dev (dev) – Holds device files ( present hardware devices).
-/etc (etc) – System configuration files and startup scripts (Ex: /etc/passwd, /dev/tty).
-/home (home) – Personal directories for each user.
-/lib (lib) – Shared library files needed by programs in /bin and /sbin.
 /media (media) - Temporary mount point for removable devices (like USBs, CDs).
-/mnt (mnt) - Mount point for temporary mounting of files ystems (manual mounts). 
-/opt (opt) – Optional or third-party software packages (e.g. proprietary apps).
 /proc (proc) - Virtual directory that provides system and process information (e.g. /proc/cpuinfo).
 /root (root) - Home directory for the root (superuser).
 /run (run) - Stores runtime data (like PIDs, sockets) created after boot.
 /sbin (sbin) - System administration commands (e.g. reboot, fsck, ifconfig).
 /srv (srv) - Contains data for services like web or FTP servers.
 /sys (sys) - Virtual directory showing kernel and hardware information (device drivers, etc.).
-/tmp (tmp) - Temporary files (cleared after reboot).
-/usr (usr) - User system resources, it contains most user applications and libraries (/usr/bin, /usr/lib).
-/var (var) - Variable data like logs, spools, and cache (/var/log, /var/tmp).
+
