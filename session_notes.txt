@@ -1,0 +1,374 @@
+
+
+
+what's cloud ? 
+
+
+cloud computing ? 
+
+SLA : 99.99999999999
+
+data and applications being stored and run on the cloud rather than being stored on local machine or on promises 
+
+
+types of cloud computing or cloud technologies : 
+
+Salesforce
+
+AWS --> Amazon web services --> AMAZON 
+
+AZURE --> MICROSOFT
+
+GCP --> GOOGLE
+IBM Cloud -> 
+
+
+Pay as you go --> 
+==============================================================
+
+
+aws account : aws account id : 
+
+
+root user :  -> admin access  -> cto ceo bod 
+email and password 
+
+
+aws admin --> Manjunath --> aws admin -->   users and aws services 
+
+
+IAM user : 
+
+aws account id : 
+iam user name : 
+iam password :
+
+===========
+
+budget setup : 
+
+$3 per month -->  750 hrs --> vms 
+
+
+
+=========================
+
+CLOUD SERVICE MODELS
+
+IAAS
+PAAS
+SAAS 
+
+cloud computing deployment models 
+
+
+public
+private 
+hybrid cloud  aws + on premises 
+
+
+aws -->  default 
+VPC --> own network and servers setup and its configuration  ,  Bastion host  or jump server 
+
+              ssh         NAT GATEWAY 
+bastionhost ------> app server 
+
+web server  --> httpd or nginx --> html,css,js
+app server   
+db server 
+
+====================
+
+
+AWS global infrastructure : 
+
+Region
+AZs or availability zones
+Edge locations 
+
+
+Region -->  a region is a geographical location which host 3 or more AZs, each region has min of 3 AZs 
+
+
+AZ : 
+
+collection of data centers with in a region 
+
+
+
+
+us-east1    -> N.virginia 
+
+us-east1a
+us-east1b
+us-east1c
+us-east1d
+us-east1e
+us-east1f
+
+
+us-east-1a       us-east-1b   us-east-1c
+
+
+
+ec2->app
+
+
+us-east1           us-west-2
+
+ec2->app
+
+
+Mumbai 
+
+ap-south-1
+
+
+ap-south-1a
+ap-south-1b
+ap-south-1c
+ap-south-1d
+ap-south-1e
+ap-south-1f
+
+Hyderbad 
+ap-hyderbad-1a
+ap-hyderbad-1b
+ap-hyderbad-1c
+
+
+
+
+3. Edgelocation  or cach location or copy replication or CDN --> cloudfront   --> azure frontdoor or cdn profiles 
+
+
+amazon.com
+
+chennai -------> edge location -----------------Mumbai/HYD -------------------------------------> origin server(ec2,serverless service,s3,ecs,eks) amazon.com (usa  us-east-1 , us-east-1a)
+
+
+
+
+charcoal --> shop1 ---------------------------------------> wholesale shop -------------------------------> manufactory unit 
+
+==================================================
+
+
+aws free tier :  for 12 months --> pay as you go --> you are going to pay the charges/bills based on usage , like electricity or post paid 
+
+ec2 --> 750 hours per month  --> t2.micro --> instance type 
+
+10 instances 
+
+10*24 = 3 27  
+
+
+24*30 == 
+
+S3 BUCKET
+RDS --> 
+efs
+storage 
+
+
+
+list the services which comes under free tier eligible customers
+
+
+------------
+
+https://github.com/iskanthavijay-blip
+
+
+ec2 instance : 
+
+
+
+
+
+
+
+Linux+bashscripting  ---> aws+networking  ----> devops 
+
+mac --> 
+windows --> enterprise edition and licensed 
+
+ctrl+c --> 
+
+cc --> 
+
+
+Linus Torvalds 
+
+unix 
+
+
+
+Linux is an opensource os, it's for free , it has both text and graphical based os 
+
+
+
+merits: 
+
+Opensource : 
+
+source code is freely available , can be modified or distributed 
+
+
+security : 
+
+robust security features ---> user/files permission and multi user environment 
+
+
+
+db_Config.txt  --> John --> read or write or executable(shell script)
+
+
+John
+
+
+
+WSL -> ON WINDOWS --> Windows subsystem Linux --> hypervisor 
+
+
+
+
+stability or reliability : 
+
+
+1.2 --> 1.2  
+
+2025 --> 1.2              --> 30 
+
+
+performance 
+
+
+Pkg management (software package mgt)
+
+
+WhatsApp --> 
+
+=========
+
+demerits : 
+
+software compatibility 
+
+driver support : 
+
+
+
+user interface or desktop env : 
+
+
+folder -> directory 
+
+
+
+limited support for certain softwares : 
+
+
+===================
+
+
+Linux distributions or Linux flavours  : 
+
+2 types of Linux distribution families : 
+
+1. Debian family 
+2. Fedora family 
+
+1. Debian family     -> apt or apt-get   --> advanced pkg mgt tool 
+
+Debian 
+kali
+ubuntu 
+
+
+2.  Fedora family   -> yum 
+
+fedora
+redhat Linux
+centos 
+alma Linux
+openSUSE 
+amazonlinux 2 amazonlinux 2023 
+
+
+
+============================
+
+Linux task : 
+
+1 : the Linux booting process(purpose of each steps in the process) and Linux directory structure , purpose of each directories
+
+
+=======================================================
+
+/ --> root directory 
+
+root user dir is different --> when you log in as a root user --> default dir 
+
+
+all other directories are sub or child directories of the root dir . 
+
+
+/bin : --> system user binaries  -> this dir holds the essential user command binaries or Linux utilities or Linux commands 
+ex: ls,cp,mv,yum,apt,bash,rm, ----> reside here 
+
+
+/etc  : -> system configuration --> control panel on Linux 
+
+  passwd --> user account inform(user name) , group, hosts(to store the DNS entries --> )
+  hosts(to store the DNS entries -->DNS resolution,  mapping the dns records --> ip with domain name --> 192.123.2.3 amazon.com
+  sudoers -> sudo configuration  (default user would be root ,  )
+
+whenever you are going to create a user ----> it creates a user and a users group 
+
+whenever you are going to create a group ----> it creates a users group only 
+
+
+guru   -> devops
+
+john  --> john and john group 
+
+
+you need add john to devops group --> john will get devops access 
+
+
+/home ---> user home dir  
+
+john 
+
+/home/john 
+
+/var --> variables file   --> logs, mails and so on 
+
+
+/usr  --> user binaries /usr /usr/lib /usr/share /usr/bin
+
+/usr/bin
+
+
+git 
+
+git add , git commit git push 
+
+/sbin   -> system command binaries or adm commands,  fdisk, ifconfig , reboot -->  system related troubleshooting 
+
+
+/opt  --> install the third party applications, SonarQube or tomcat, nexus 
+
+ 
+/tmp -->  these files will deleted upon reboot 
+
+
+/proc
+
+/dev --> 
+
+
+=============================================================================
+
+Linux commands : 
