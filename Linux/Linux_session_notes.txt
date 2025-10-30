@@ -1,0 +1,477 @@
+linux  - developed by Linus Torvalds
+
+unix  -> 
+
+linux is an opensource operating system. it has both text and graphical based operating system.
+
+
+
+
+usage of linux
+
+Merits of Linux:
+
+Open Source:
+
+Merits: Linux is open-source, meaning its source code is freely available and can be modified and distributed. This fosters collaboration and community-driven development.
+
+Benefits: Users can customize the operating system to suit their needs, and security vulnerabilities can be addressed more rapidly.
+
+
+Security:
+
+Merits: Linux is known for its robust security features. Its multi-user environment and permissions system help protect against malware and unauthorized access.
+
+Benefits: Linux is less susceptible to viruses and malware compared to some other operating systems, making it a preferred choice for servers and critical infrastructure.
+
+Stability and Reliability:
+
+Merits: Linux is known for its stability and reliability. It can run for extended periods without needing to be rebooted, making it suitable for servers and critical systems.
+
+Benefits: System crashes are less frequent, and the system tends to handle heavy workloads efficiently.
+
+
+Performance:
+
+Merits: Linux generally performs well, even on older hardware. It can be configured for specific use cases, making it efficient for various applications.
+
+Benefits: Linux is often used in resource-constrained environments and can provide good performance for tasks ranging from desktop use to server applications.
+
+
+Package Management:
+
+Merits: Linux distributions use package managers that simplify software installation, updates, and removal. This centralized approach ensures software is installed with dependencies, reducing compatibility issues.
+
+Benefits: It's easier to manage software and keep the system up-to-date.
+
+Demerits of Linux:
+------------------
+
+Software Compatibility:
+
+Demerits: Some proprietary software and applications are not available for Linux. Users may face challenges finding alternatives or using compatibility layers like Wine.
+
+Drawbacks: Gaming and certain professional applications may have limited support on Linux.
+
+Driver Support:
+
+Demerits: While Linux supports a wide range of hardware, some manufacturers may not provide Linux drivers. This can lead to compatibility issues for specific devices.
+
+Drawbacks: Users may need to rely on community-developed or generic drivers, which may not offer the same level of performance or features as official drivers.
+
+User Interface and Desktop Environments:
+
+Demerits: The variety of desktop environments and user interfaces in Linux can be overwhelming for new users. It may take time to find one that suits individual preferences.
+
+Drawbacks: The user experience may not be as consistent as in some other operating systems.
+
+Learning Curve:
+
+Demerits: For users accustomed to other operating systems, the Linux command line interface can be intimidating. Learning the commands and system configurations may take time.
+
+Drawbacks: The learning curve can be a barrier for some users, especially those who are not familiar with the command-line interface.
+
+Limited Support for Certain Software:
+
+Demerits: Some industry-specific or niche software may not have Linux versions or equivalents. This can be a significant drawback for professionals in certain fields.
+
+Drawbacks: Users may need to resort to virtualization or dual-boot setups to run essential software that is not natively supported on Linux.
+
+===============================
+
+
+linux distributions :
+
+2 linux distribution families:
+
+1.debian family
+
+2.fedora family
+
+1.debian distribution family ( apt or apt get  )
+debian
+ubuntu 
+
+2.fedora distribution family ( yum or dnf )
+
+fedora
+kali  ->
+open suse
+Redhat linux 
+cent os
+alma linux
+
+amazon linux 2023
+amazon linux 2 
+
+alpine -> apk 
+
+package mgt tool 
+
+update, upgrade, install, unintall, 
+
+
+linux distributions 
+
+
+2 types of linux distribution families
+
+1.debian  linux distribution families  -> apt  or apt-get 
+2.fedora  linux distribution families  -> yum 
+
+1. debian linux families  -> apt install git -y
+debian  
+ubuntu 
+
+2.fedora family
+fedora
+centos
+opensuse
+amazon linux 2    -> yum install git -y  
+kali linux
+alma linux
+
+alpine linux ->  independent linux distribution , apk -> apk install git -y 
+busy box -> light weight linux distro for linux utilities .
+scratch 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+linux os
+
+os -> combination  of shell and kernal 
+
+it's an interface user and system
+
+
+kernel it's software , it's heart  of operating software , core component of os 
+
+linux os depends on kernel 
+
+system depends os 
+
+
+
+html
+source code  web application   webserver
+
+home.html 
+<html>
+<body>
+<h1>manjuTechPvtLtd</h1>
+<p> this is software solutions </p>
+</body>
+</html> 
+
+
+sample.py 
+
+a="welocome  to linux"
+print(a)
+
+
+computer  , 
+
+.java
+.py 
+
+execution 
+
+jvm
+pvm 
+jre 
+
+a=10
+print(a,type(a))
+
+source code  compiling             compliler                                                    pvm                            
+    py                             .pyc,javac , complied code or byte code           processor/ram/rom
+                                
+
+
+
+
+
+
+
+
+
+programming execution process
+
+ 
+                 compiling phase                                executing phase                 pvm /jvm  /processor/cpu      
+sample.py                             compiler    
+                                      compiled code                                                   +v 0,1 
+                                      byte code (pyc,javac)                                            o  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ls  -> listing the files and folders
+
+
+ll   -> longlist files and folders
+
+
+
+
+
+
+source code : 
+
+
+
+
+
+Linux Shell:
+- default shell in Linux is BASH.
+
+
+ in os there is a special program is called "shell".
+- shell is interpretor
+- shell takes the commands from user and execute it.
+- and it will gives the result as user understandable.
+
+linux kernal  
+
+
+linux distributions
+
+
+
+
+amazon linux 2 -> rpm , snap , yum ,dnf
+
+linux package mgrs with different linux flavours  
+
+APT (Advanced Package Tool) - debian, ubuntu
+DNF (Dandified YUM) or yum (older version)   - fedora, redhat,centos,
+Zypper - pkg mgr to openSUSE   -> sudo zypper install git -y
+Snap -> pkg mgr to debian and fedora as well 
+RPM (Red Hat Package Manager) -> fedora,centos and so an
+DPKG (Debian Package) -> debian and ubuntu
+
+
+
+RPM VS YUM 
+
+RPM -> ONLY TOOL, not going to install dependencies with it 
+Yum
+
+git pythons
+
+
+
+
+RPM VS YUM 
+
+
+brew (Homebrew package manager) -> mac os --> sudo brew intall git 
+
+macOS: Command(cmd)  (⌘) + C  -> copy the files  ls,ps,rm, mv ,cp,
+
+Standard: Ctrl + C  -> copy the files 
+
+port ( MacPorts package manager) -> mac os -> 
+
+sudo -i or sudo su -  --> to get into root user
+
+
+==================================================================================================================================
+LINUX BOOT PROCESS
+https://medium.com/@gangulysutapa96/6-stages-of-linux-boot-process-5ee84265d8a0
+
+==================================================================================================================================
+
+LINUX FILE/DIRECTORY /FOLDERS STRUCTURE
+--------------------------
+most essential directories path and devops tools which are stored in it,  that should devops remember, cos where all executable files and storage directories
+
+
+/ (root directory):
+
+The top-level directory in the Linux file system hierarchy.
+All other directories are subdirectories of the root directory.
+---
+
+🗃️ /bin: Binaries - This directory holds the essential user command binaries that all users can access.
+
+Contains essential binary executable files accessible to all users.
+Common commands like ls, cp, mv, yum apt,rm, etc., reside here. sh
+
+---
+⚙️ /etc: System Configuration - Houses the system configuration files, acting as the control panel on Linux.
+
+Contains system-wide configuration files.
+Important files like passwd (user account information), hosts (DNS resolution), sudoers (sudo configurations), and group more.
+---
+
+🏠 /home: User Home Directories - Contains the home directories for users and other accounts.
+Home directories for regular users are located here.
+Each user has a subdirectory with their username.
+---
+📁 /var: Variable Files - This is the variable data directory storing changing data like logs, mails, print spools, etc.
+and journalctl -> to check the log files in your local machine or system .
+
+Contains variable data files, such as log files (/var/log) and mail (/var/mail).
+Also includes temporary files, caches, and other variable data.
+---
+👥 /usr: User Binaries - Contains multi-user utilities, applications, and libraries.
+
+Contains user-related programs and data, usually read-only data (except for /usr/local).
+Common directories within /usr include /usr/bin, /usr/lib, /usr/share, etc.
+
+
+git 
+
+git add 
+
+ls 
+
+/bin/bash
+usr/bin/bash
+
+
+---
+
+🔧 /sbin: System Binaries - Contains the essential binaries used by the system administrator for system maintenance and troubleshooting.
+
+Similar to /bin, but it contains essential system binaries for the root user (administrative commands).
+Commands like fdisk, ifconfig, reboot, etc., are stored here.
+---
+🎁 /opt: Optional Software - Stores optional or additional software from vendors.
+cd /opt -- installing the tools ,sonarqube,tomacat, nexus and so on
+
+Typically used for the installation of optional (third-party) software.
+Some software packages, especially those not installed via the package manager, might reside here.
+--
+🔨 /srv: Service Data - This directory contains server-specific services related data.
+
+Contains site-specific data served by the system.
+For example, web server files(nginx)can be stored here.
+---
+🗑️ /tmp: Temporary Files - This directory stores temporary files created by the system and users.
+
+A temporary directory accessible to all users, where they can store temporary files.
+Files in this directory are usually deleted upon reboot.
+---
+📊 /proc: Process Information - A virtual directory detailing system and process information.
+
+A virtual filesystem that provides information about running processes and system configuration.
+It's not a real directory with disk storage but rather a dynamic interface.
+---
+
+
+💽 /dev: Device Files - Home to all device files, such as hard disks, USB, CD-ROM, etc.
+null file 
+
+Contains device files that represent hardware devices on the system.
+These files are used to interact with hardware components.
+Remember, these are just some of the essential directories. Linux has a vast file system hierarchy, and depending on your specific tasks and the distribution you are using, you may encounter additional directories or variations in their organization. Understanding these directories and their purposes will provide a solid foundation for your work as a DevOps engineer.
+
+------
+
+📚 /lib: System Libraries - Houses library files that are needed by the system and the users.
+
+📝 /mnt: Mount Directory - Used for mounting other temporary file systems.
+
+💿 /media: Removable Media - Acts as a temporary mount directory for removable devices.
+
+🚀 /boot: Boot Files - Contains boot loader related files.
+
+👑 /root: Root Home - This is the home directory for the root user.
+
+🔌 /run: Application Information - A tmpfs file system that contains application information.
+
+🧑‍🔬 /usr/local: User Local - Contains user's programs that are installed from the source.
+
+📦 /lib64: 64-bit Libraries - This is where the 64-bit library files are stored.
+
+
+
+==================================================================================================================================
+
+
+give all devops tools and  their directory path in linux 
+
+there are numerous DevOps tools available, and they can be installed in different locations in the Linux file system. The following is a list of some popular DevOps tools along with their common installation paths:
+
+tools -> executable path /bin and configuration path /etc
+
+
+Git 
+
+Path: Usually installed system-wide, binaries in /usr/bin/git and configuration files in /etc/gitconfig.
+User configuration: ~/.gitconfig.
+
+Ansible 
+
+Path: Executable located in /usr/bin/ansible.
+Configuration: /etc/ansible/ansible.cfg.
+Playbooks and inventory files  can be stored anywhere, often in the user's working directory.
+
+
+Puppet
+
+Path: Executables located in /opt/puppetlabs/bin.
+Manifests and modules are stored in /etc/puppetlabs/code.
+
+Chef 
+
+Path: Executables located in /opt/chef/bin.
+Cookbooks and related files are stored in /etc/chef or /var/chef.
+
+
+Jenkins  -> /var/lib/jenkins/workspace
+
+Path: The installation path may vary, but commonly found in /var/lib/jenkins.
+Configuration: /etc/default/jenkins or /etc/sysconfig/jenkins.
+
+Docker
+
+Path: Executable located in /usr/bin/docker.
+Docker images and containers are stored in /var/lib/docker by default.
+
+Kubernetes (kubectl)
+
+Path: Executable located in /usr/bin/kubectl.
+Configuration: ~/.kube/config.
+
+Terraform
+
+Path: Executable located in /usr/bin/terraform.
+Configuration files can be stored in any directory, commonly in the user's working directory (terraform.tf, variables.tf, etc.).
+
+Prometheus
+
+Path: Executable located in /usr/local/bin/prometheus.
+Configuration: /etc/prometheus/prometheus.yml.
+
+Nagios
+
+Path: Executables and configuration files are commonly found in /usr/local/nagios or /etc/nagios.
+
+
+Grafana
+
+Path: The installation path may vary, but commonly found in /usr/share/grafana.
+Configuration: /etc/grafana/grafana.ini.
+
+ELK Stack (Elasticsearch, Logstash, Kibana) in AWS
+
+Path: The installation paths may vary, but configuration files and data are typically stored in /etc/ or /var/.\
+
+=================================================
+
+  
