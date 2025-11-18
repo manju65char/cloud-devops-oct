@@ -1,0 +1,49 @@
+A symbolic link:
+ 
+     1)It doesn't save real data of the file.
+
+     2) It just points to the location of the  file.
+
+     3) When the original file is relocated or deleted, the symlink becomes broken (stripped of meaning).
+
+There are two types:
+
+     1) Soft link (Symbolic link)
+
+     2) Hard link
+
+Soft link: 
+
+     1) Like Windows shortcut.
+
+     2) Refers to the original file location.
+
+     3) Can link directories also.
+
+     4) If original file is deleted → symlink wouldn’t work.
+
+Hard link:
+    
+     1) Exact mirror of the file.
+
+     2) Refers to same data on disk.
+
+     3) If you delete the original file → hard link STILL works.
+
+     4) Cannot link directories.
+
+
+Cronjob:
+   
+     1) In Ubuntu, a cronjob is a timed job scheduled to execute using the crondaemon, which takes care of running the task on time and executing at given periods from a          configuration file called crontab.
+
+     2) Cronjobs In Linux environment It's a very common to perform system back-up, maintenance and routine tasks using cronjob.
+
+
+Zip command: 
+   
+     1) A compression + archive format
+
+     2) It packs files and reduces their size.
+
+     3) Used widely in Windows and Linux. 
