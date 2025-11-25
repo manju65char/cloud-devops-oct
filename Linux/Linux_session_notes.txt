@@ -473,5 +473,4093 @@ ELK Stack (Elasticsearch, Logstash, Kibana) in AWS
 Path: The installation paths may vary, but configuration files and data are typically stored in /etc/ or /var/.\
 
 =================================================
+updated notes : 25th nov 2025
+
+
+NAVIGATION AND DIR CONTROL COMMANDS 
+
+man -> manual page 
+
+--help
+
+
+
+
+$ -> normal user  -> id -u  -> 1000
+
+sudo -i  or su -
+
+# -> root user or admin user -> id -u  -> 0
+
+
+exit -> to go back to normal user or logout from root user 
+
+
+. 
+..
+
+/
+
+
+ll -> longlist of the files and directories 
+ls -ld */   -> to list only the directories in a directory in Linux
+
+ls -> list of all the files and directories but it doesn't show the hidden filesc(. or ..files/dir) and folders
+ls -a -> list of all the files and directories along with  hidden files and folders
+ls -l -> longlist of the files and directories
+ls -id <name of dir> -> to display the particular dir 
+ls -lh -> list out the all files and directories with size 
+ls -lR   -> to list the all folder with subfolders 
+ls -lh  .txt     -> to see the size of a file 
+ls -i    -> inode values
+ls -iltr -> full inform of files and dir with inode values
+man ls -> 
+ls -> to list the files and dirs in the local machine
+ls -l -> to display the longlist of  default files and dir
+ll    -> to display the longlist of  default and hidden files and dir
+ll -h -> to display the longlist of  default and hidden files and dir with their size , -h ( human readable format )
+ls -ltr  -> to display the longlist of  default files and dir, sort by time  with reversal order
+ls -lt   -> to display the longlist of  default files and dir, sort by time
+--------
+
+touch command
+
+touch < file name >   -> to create a empty file
+touch filename{1..30} -> to create multiple files
+
+
+---------
+echo command : to print or to display the  line ( of content )
+
+echo "some content" > samplefile.txt   -> creating a file with content , the content is redirecting or replacing . 	
+echo 'hello world' >> samplefile1  -> creating a file with content , the content is appending 
+
+echo -e '#!/bin/bash\necho "Hello world"\nthis is third line ' > sample.txt   
+
+-> here you used single quote and double quotes, so this is how creating script with some content .      \n -> new line , -e -> 
+
+
+echo >> org1.txt hello        -> creating a file with content
+echo <name of file >          - to display or print the output  of executable file 
+echo -n > newfile1.txt     ->  to make file empty ( existing file with content)
+
+
+---------
+cat command 
+
+cat -> to display the content of file
+
+cat /etc/shells -> to display the default shells in your local machine
+
+cat >> file1.txt --> interactive mode , appending the content 
+cat > file1.txt --> interactive mode 
+
+cat file1.txt>file2.txt     -> to redirect the content from one file to another existing or new file ,
+
+cat id_rsa.pub > authorized_keys
+
+cat file1.txt >> file2.txt  -> to appending the content from one file to another existing or new file
+
+
+file1
+file2 
+
+file3 
+
+
+cat file1 file2 > file3   
+
+vim   
+  
+---------
+mkdir command   -> 
+
+mkdir < dir > --> to create the dir
+
+mkdir day{1..40}      ->  to create multiple dir
+
+
+mkdir -p <maindir>/<subdir>  
+
+mkdir dir1 && cd dir1  -> used to create and switch to the same dir ,
+
+mkdir dir2 && touch dir2/file1.txt   -> to create a folder and create new file in the same folder (..)
+
+mkdir dem6 && echo "my fourth demo session" >> dem6/file5.txt    -> used to create new dir with content file 
+
+1.1.2.
+
+incremental changes in version is called upgrade 
+
+
+&& and | 
+
+-----
+
+rm commands 
+
+
+rm  --> to delete/remove  the file 
+
+rmdir <dir>  --> to delete the empty dir only
+
+rm -i <file name >   -- it's going to ask user to confirmation before removing the files ( yes/y or no/n )
+
+rm -R <file name >/dir  --> to delete the dir recursively 
+
+rm -rf <dir>  --> to delete the dir with content
+
+rm -rf file_name 
+
+
+---> dec-15 --------------------------------------
+
+
+| -> Temporary storage  and && -> 
+
+&& -> to run the multiple commands on terminal 
+
+
+
+
+
+
+journalctl | tail -n 3 
+
+---------
+cd commands  :
+
+cd -> used the changing the dir
+cd or cd ~ --> to go back to home dir
+cd - -> used to go back recent worked dir, the dir which u entered most recently 
+cd .. -> used to go back previous dir
+cd ../.. -> it takes you to previous dir, with two steps back 
+
+--------
+
+--------
+
+mv command  
+
+
+mv < old file>  <new file>
+
+dont have particular command for rename the file or dir 
+
+mv 
+
+mv --> used to move the file/dir from one dir to another dir and also used to rename the file/dir
+--------
+
+cp command -> to copy the files or content of file or dir form source point to destination point 
+
+cp 
+-----------------
+
+networking commands :
+
+
+httpd webserver
+
+html files/css files  to create web pages - webserver http/nginx
+
+
+publicip:90
+publicip:90
+publicip:89
+
+
+
+https  : 443
+
+http : 80
+
+system 
+httpd : 80
+tomcat 8080
+nginx : 80
+
+jenkins : 8080
+
+
+
+grep/find/cut/sed/awk
+
+
+hostport:containerip
+8989:80   -> amazon.com
+8983:80   -> aws.amazon.com
+79908:80  -> shopping.amazon.com
+
+
+
+nginx:80
+
+amazon.com   8888: 80            47477
+aws.amazon.com 9989: 80             8484
+shopping.amazon.com  8848:80       448
+
+--------------------------
+process mgt commands 
+
+ps
+
+
+
+ps -ef  OR ps aux   ->  detailed list of all processes running on the system,
+
+
+
+ps aux | grep nginx    -> Filter Processes by Name
+
+sudo lsof -i :80    -> This command is used to list information about files that are currently opened by processes.
+
+sudo kill PID
+
+sudo kill -9 PID   --> -9 (forcefully)
+
+top : to display linux tasks and running process 
+
+sar : ( system activity report ), used to collect the CPU,MEMORY AND I/O usage  (not found in bash shell )
+
+
+
+---------------------------------------------------------------------------------------------------
+wc     -> wc/word count used to count the lines words and characters in a file
+
+manjunathachar@manjunathachar-k-t:~$ wc var1.sh 
+
+ 19  40 260 var1.sh
+ 
+ 
+ wc -L  var1.sh     -> display the big line or longest line or line lenth in  file 
+ 
+ cat -n file.txt     -> to display the file content in chronological order,
+ 
+ tac file.txt.sh  -> to display the content of file in reversal order
+ 
+ 
+more file1.txt     -> to display more information of particular file , can tab in lapltop
+
+ex: the file which conatains 1000 lines , 501th 
+
+
+
+more -s  file1.txt     -> to surface the content in the file or remove the space or gap in the file 
+
+more +40 file1.txt    -> to start the files from line number 40 in the file 
+
+less file1.txt     -> to start the files from line number 40 in the file , to display big file we use less command
+
+head file1.txt or head -n 5 file1.txt     -> used to print 1st 10 lines of the file , we customised based on changing the numbers
+
+tail file1.txt       -> to get last 1o lines of the file 
+
+/var/toolname/filename/
+
+journalctl | tail
+-------------------
+
+
+User/Group Administration commands
+
+Note: Old password is first requested then new password is requested twice for confirmation.
+
+use sudo or root access to execute commands 
+
+useradd(debian) or adduser(Fedora)  -> creates a new user a/c -> only root user can execute this command 
+  
+passwd : changes a user's passwords
+
+cat /etc/passwd :  To view a list of users on a Linux system,
+
+
+sudo useradd username -> Creating a User
+
+
+sudo passwd username   -> Setting Password for a User:
+
+
+sudo userdel username   -> Deleting a User:
+
+Creating a Group:   
+
+sudo groupadd groupname   -> creating group 
+
+sudo groupadd developers
+
+sudo usermod -aG groupname username    -> Adding or appending  a User to a Group 
+
+sudo gpasswd -d username groupname    -> removing a user from  a specific group      
+
+
+sudo usermod -d /new/home/directory username  -> Changing a User's Home Directory:
+
+
+sudo usermod -s /path/to/new/shell username  -> Changing a User's Shell:
+
+sudo usermod -s /bin/bash john
+
+
+sudo groupdel groupname  Deleting a Group:
+
+sudo groupdel developers
+
+
+cat /etc/group   -> Listing Groups 
+
+
+id -> it's one more command which will show the user details such as his primary group and his secondary group.
+
+$  -> id -u -> 1000  -> normal user 
+#  -> id -u -> 0   -> root user 
+
+su -> to switch user and to come out from the user press CTRL+D,logout or exit.
+
+----------------------------------------------------------------------
+chmod command--> change mode 
+
+alpha/num 
+
+there are two ways to give permission to the user or group or others to access the files or directories
+
+drwxrwxr-x  3 manjunathachar manjunathachar 4096 Feb 26 17:15 newdir/
+-rw-rw-r--  1 manjunathachar manjunathachar  138 Feb 26 17:48 sample.txt
+
+
+alpha
+number   0 to 7
+
+- 
+r- read -> 4
+w - write -> 2
+x - execute -> 1 
+               7
+- = 0
+
+user                        group                           other
+r  w  x                    r w x                              r - x 
+4  2  1                    4 2  1                             4 0 1
+7                            7                                    5
+
+
+5            6        4  
+r-x         rw-       r--
+
+
+
+chmod 564 sample.txt
+
+
+
+
+
+chmod 300 roboshop 
+d -wx --- ---
+
+
+chmod 563 roboshop 
+
+d r-x rw- -wx
+  
+chomd 400 pem.file 
+-r-- --- ---
+
+
+        file or dir     user   group   others
+alpha-    -  or d       R W X  R W X   R W X
+num -                   4+2+1  4+2+1   4+2+1     ( 0 to 7)  
+group   others
+alpha-    -  or d       R W X  R W X   R W X
+num -                   4+2+1  4+2+1
+                          7      7       7         
+
+"-" > that's not allowed to access the files and folders 
+
+file1 
+
+
+- -wx rw- ---   username groupname  sizefile  file created date and time   file name
+
+
+  021 420 000
+  3    6   0  
+  
+  chmod  360 filename
+  
+  
+------------------------------------
+
+Remote Access Commands
+
+SSH (Secure Shell):   -> Connect to a remote server
+
+ssh username@remote_host 
+
+
+
+SCP (Secure Copy):   -> Copy files between local and remote systems securely: jenkins publish over ssh -> 
+
+chmod 400 my-aws-key.pem
+
+scp /path/to/local/file username@remote_host:/path/to/remote/destination   -> one server to another server
+
+scp -i /path/to/your/keyfile.pem /path/to/local/file username@ec2-instance-ip-or-dns:/path/on/ec2  -> local machine to aws-ec2
+
+
+scp -i "k8s-project.pem" /home/manjunathachar/var1.sh ec2-user@ec2-184-169-248-88.us-west-1.compute.amazonaws.com:/home/ec2-user
+
+
+scp -i "your pem file" <local server's directory path> <remote server's directory path>
+
+scp -i "amazon-linux2.pem" /home/manjunathachar/sys-update.sh ec2-user@ec2-44-223-65-183.compute-1.amazonaws.com:/home/ec2-user
+
+by default the pem has 664  private key 
+
+r -> 4
+w -> 2
+x -> 1
+
+0 to 7 
+
+- --- --- --- 
+  rwx rwx rwx
+  421 421 421
+   7   7   7 
+   
+   alpha
+   number
+   
+ -   r-- --- ---
+ f   4    0   0
+   
+ chmod 400 
+   
+   
+   
+   
+  cp
+  
+
+
+
+scp -i "my-aws-key.pem" ec2-user@ec2-34-207-173-221.compute-1.amazonaws.com:/path/on/ec2/var1.sh /path/on/local/machine  --> copy the files from ec2 to local machine.
+
+
+
+
+scp -i "my-aws-key.pem" ec2-user@ec2-34-207-173-221.compute-1.amazonaws.com:/home/ec2-user/robo-shop /home/manjunathachar/linuxdemo/newdemo1
+
+
+
+telnet : Connect to a remote server (less secure than SSH, often not recommended):
+
+telnet remote_host
+
+ssh -i username:remotehost
+
+
+----------------------------------------------------------------------
+Hardware Information Commands :
+
+free : To find the amount of free and used RAM memory in the system.
+
+du -> 
+df
+
+
+
+sonarqube , maven , 2 4 ram required , 2 , 4 cpc ,
+
+
+dmidecode -t 17  -> It give the RAM information like type of RAM(SD RAM, DRAM or DDR/2/3),Speed , Manufacture etc -> root user can perform this command 
+
+vmstat: it will gives the virtual memory statistics .
+
+
+System resource commands 
+
+Man -> manual page , metadata of the linux utilities 
+
+who -> displays the current user working on the system
+
+w -> show who is logged on and what they are doing
+
+users : displays a compact list of the users currenly logged on the system
+
+whoami : display the current user info who gave this command
+
+whereis -> path/locate the binary, source and manual page for a command
+
+date -> print or set the system date and time
+
+df ->   for entire system   report file system disk space usage -> displays the local disc drive , ssd, hdd 
+
+du -> for fils or dir estimate file space usage, it displays the detailed information of file and folder usage
+
+du -sh < dir name >   -> to see the size of directory   ( -s summarise the files and folders ) , 
+
+hostname -> show or set the system host name ,in ec2 instace -> private ip of instance 
+
+ifconfig or hostname -i or ip a  -> to find the ip address 
+
+whatis ls
+
+uptime -> how long the system has been ruuning 
+
+last  -> show listing of last logged in users 
+last root -> to get the most recently logged in as root users
+sudo lastb ->  to get the list of all bad log ins in your local machine
+  
+
+
+systemctl start <name of service >    ---> debain/ubuntu/fedora 
+
+service <name of service > start      ---> in  redhat/centos
+
+systemctl -> used to check the running services in your local machine
+
+systemctl --failed   -> used to get the failed service in the system
+
+systemctl start <name of service >  to start the service (prometheus service)
+systemctl restart <name of service >  to restart the service (prometheus service)
+systemctl reload <name of service >  to reload the service (prometheus service)
+systemctl daemon-reload  ->  whenever you make any changes in system config file , have to reload or restart the systemd or system daemon  
+systemctl status <name of service >  to check status of  the service (prometheus service)
+systemctl enable <name of service >  to enable  the service at boot,  (prometheus service)
+systemctl stop <name of service >  to stop the service (prometheus service) 
+jounalctl -> to get systemlogs 
+
+
+
+chown -> changing ownership 
+
+chown username <file or dir name >
+
+
+----------------------------------------------------------------------
+
+Archive/Data Backup Commands :
+
+zip -> If you have a bunch of files and folders and want to compress them into one archive, use zip
+
+zip archive.zip file1 file2 directory1  -> Command to Create a Zip Archive:
+
+unzip archive.zip -d destination_folder ->  unzip archive.zip -d destination_folder
+
+----
+gzip ->  If you want to compress a single file, use gzip.
+
+gzip file1  -> Command to Create a Gzip Archive:
+
+gzip -d file1.gz   ->  Command to Extract a Gzip Archive:
+
+
+rsync 
+
+---
+
+tar -> tape archive used  to compress, archive and store files and directories in local machine
+
+-c --create Create a new archive.
+-x --extract Extract files from an archive.
+-t --list List the contents of an archive.
+-f --file=ARCHIVE Use archive file or dir ARCHIVE.
+-v --verbose Verbosely list files processed
+
+
+cvf  ./name of archive file.tar  ./name of file or dir    --> to create tar file
+
+tar -cvf archive.tar file1 file2 directory1
+
+
+tar xvf name of archive file.tar  -->  to extract the tar files
+
+
+
+
+====================================
+
+Networking commands :
+
+
+manjunathachar@manjunathachar-k-t:~$ ip address show or ifconfig   -->  to see the ip address 
+
+ip route  or route --> default gateway 
+
+netstat  -rn  --> same as route 
+
+nmcli   --> to see dns resolver 
+
+cat /etc/resolv.conf   --> to see the aws name server .
+
+to find the remote network information like its ipaddress , routes , system online or not 
+
+dig google.com 
+
+nslookup( old command)   --> same as dig to get ipaddress of remote network
+
+to check the route , how it's routing, how many hops it's going to hit to reach the destination .
+
+traceroute google.com   ( install traceroute -> sudo apt-get install traceroute)
+
+Traceroute is a network diagnostic tool used to trace the route that network packets take from your computer to a destination host or server on the internet.
+
+This is a traceroute command showing the path and response times of data traveling from your computer to Google's servers. Each line represents a different network device (like routers) the data passes through each hops
+
+
+manjunathachar@manjunathachar-k-t:~$ traceroute google.com
+traceroute to google.com (142.250.205.238), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  8.222 ms  8.835 ms  13.865 ms
+ 2  103.139.156.142 (103.139.156.142)  13.973 ms  14.062 ms  14.489 ms
+ 3  103.139.156.141 (103.139.156.141)  23.208 ms  23.219 ms  26.620 ms
+ 4  103.42.72.34 (103.42.72.34)  46.791 ms  46.776 ms  46.760 ms
+ 5  * * *
+ 6  142.250.228.186 (142.250.228.186)  32.184 ms 142.251.49.218 (142.251.49.218)  28.109 ms 142.251.55.62 (142.251.55.62)  25.946 ms
+ 7  108.170.253.105 (108.170.253.105)  25.884 ms 108.170.253.106 (108.170.253.106)  35.950 ms 142.251.60.187 (142.251.60.187)  23.798 ms
+ 8  maa05s28-in-f14.1e100.net (142.250.205.238)  27.270 ms  27.457 ms 74.125.242.129 (74.125.242.129)  24.770 ms
+	
+	
+	
+ping google.com --> ping is , to check whether remote server working or not , it's used to check the remote network connections 	
+	
+
+
+
+--------
+history command
+
+history
+history -c
+
+To delete the last 10 commands from your shell history
+
+history -d $(history | tail -n 5 | awk '{print $1}' | tr '\n' ' '); history -w
+
+
+
+--------
+
+text editors commands :
+----------- 
+ vi or vim 
+ nano  
+  
+  
+vim editor 
+vim file
+i or insert key -> insert mode
+esc -> command mode
+esc -> :q! -> exit  without saving the file
+esc  -> :wq! -> to save and exit from the file 
+esc -> shift +zz -> to save and exit from the file
+
+--
+Normal Mode Commands:
+Moving the Cursor:
+
+h: Move cursor left
+j: Move cursor down
+k: Move cursor up
+l: Move cursor right
+Example: Press h to move the cursor left.
+
+Navigation:
+
+w: Move to the beginning of the next word
+b: Move to the beginning of the previous word
+gg: Move to the beginning of the file
+G: Move to the end of the file
+Ctrl + u: Move half a page up
+Ctrl + d: Move half a page down
+Example: Press w to move to the beginning of the next word.
+
+Editing:
+
+i: Enter insert mode before the cursor
+a: Enter insert mode after the cursor
+o: Open a new line below the current line and enter insert mode
+O: Open a new line above the current line and enter insert mode
+x: Delete the character under the cursor
+dd: Delete the current line
+yy: Copy the current line
+p: Paste the copied or deleted text after the cursor
+u: Undo
+Ctrl + r: Redo
+Example: Press i to enter insert mode before the cursor.
+
+Search and Replace:
+
+/pattern: Search for a pattern
+
+Example: Type /pattern and press Enter to search for a pattern.
+
+n: Move to the next occurrence of the search pattern
+N: Move to the previous occurrence of the search pattern
+:s/old/new/g: Replace all occurrences of "old" with "new" in the current line
+:%s/old/new/g: Replace all occurrences of "old" with "new" in the entire file
+
+
+
+Saving and Quitting:
+
+:w: Save changes
+:q: Quit
+:wq or ZZ: Save and quit
+:q!: Quit without saving
+
+Example: Type :wq and press Enter to save and quit.
+
+Visual Mode Commands:
+
+Entering Visual Mode:
+
+v: Start character-wise visual mode
+V: Start line-wise visual mode
+Ctrl + v: Start block-wise visual mode
+Example: Press v to enter character-wise visual mode.
+
+Selecting Text:
+
+Once in visual mode, use arrow keys or navigation commands to select text.
+Example: In visual mode, move the cursor to select text.
+
+Copy, Cut, and Paste in Visual Mode:
+
+After selecting text in visual mode, press y to copy (yy for the whole line), d to cut, and p to paste.
+
+Example: In visual mode, press y to copy selected text.
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+IMP COMMANDS 
+-------------------------------------------------------------------------------------------------------------------------------
+cut : 
+
+The main use of cut command to split/trim the lines in a file.
+
+based on characters/bytes/Delimiter
+
+1 character = 1 byte , same -c or -b 
+
+fields or  Delimiter( Delimiters are characters or sequences of characters used to separate or define boundaries between different pieces of text or data ex: 
+
+Comma (,) Delimiter: Often used to separate items in a list, typically in CSV (Comma-Separated Values) files.
+
+Whitespace Delimiter: Spaces, tabs, or line breaks used to separate words or fields in text data.
+
+Tab (\t) Delimiter: Used to separate columns in tab-delimited files.
+
+Colon (:) Delimiter: Frequently used in configuration files or to separate key-value pairs.
+
+Semicolon (;) Delimiter: Used in CSV files in some regions as an alternative to a comma.
+
+Pipe (|) Delimiter: Often used to separate fields in data files, such as in the context of Unix pipelines.
+
+Hyphen (-) Delimiter: Used in compound words or as a range separator, e.g., "a-b" or "2010-2020."
+
+Underscore (_) Delimiter: Frequently used in variable and function names in programming.
+
+Forward Slash (/) Delimiter: Used in file paths and URLs to separate directories and components.
+
+Backslash (\) Delimiter: Typically used as an escape character in many programming languages and regular expressions.
+
+Hash (#) Delimiter: Often used to denote comments in code or configuration files.
+
+Double Quotation Marks (") Delimiter: Used to enclose strings, especially in CSV files to handle values containing other delimiters.
+
+Apostrophe (') Delimiter: Used to enclose single characters or strings.
+
+Parentheses (()) Delimiter: Used to group expressions in mathematics and programming.
+
+Braces ({}) and Brackets ([]) Delimiters: Used to enclose blocks of code or define arrays and sets in programming.
+
+Angle Brackets (<>) Delimiters: Often used in HTML to enclose tags.
+
+---
+
+cat file1.txt
+
+hello world
+hi, jhon 
+
+cut -c 5 file1.txt   ->  ( -c -> character 5 -> 5th character in the line, so it displays the 5th character of eachlines in a file  )
+
+cut -c 1-5 file1.txt  -> it display the character from 1st character to 5th character of  each lines 
+
+cut -c 1,3-5 file1.txt  -> it display the character from 1st character, skip the 2nd character  and take 3rd character to 5th character of  each lines , ( 1st,3rd,4th,5th of each lines in a file)
+
+cut -c 3- file1.txt --> it display the character from 3rd character to last character of  each lines 
+
+cut -c -3 file1.txt --> it display the first 3  characters  of  each lines 
+
+---
+delimiter 
+
+1,a,20
+2,a,40
+3,a,60
+
+cut -c 5 file1.txt
+
+cut -d "," -f1 <filename>  --> it cuts the first column and displays . ( -f -> field/column )
+
+1
+2
+3
+
+---
+1-a-20
+2-a-40
+3-a-60
+
+cut -d "-" -f1 <filename>
+1
+2
+3
+
+---
+1,a,20
+2,a,40
+3,a,60
+
+cut -d "," -f1-2 <filename>  --> it cuts the first 2 column and displays them , used to cut the range of fields  ( -f -> field/column )
+
+1,a
+2,a
+3,a
+---
+root@manjunathachar-k-t:~/bashdemo# ll -h
+total 92K
+drwxr-xr-x  3 root root 4.0K Oct 22 17:16 ./
+drwx------ 19 root root 4.0K Oct 22 17:16 ../
+-rwxr-xr-x  1 root root  349 Oct 22 17:16 case1.sh*
+-rwxrwxrwx  1 root root  320 Oct 22 17:11 case.sh*
+-rw-r--r--  1 root root   83 Oct 11 09:55 file1.txt
+-rwxrwxrwx  1 root root  184 Oct 22 13:36 grep.sh*
+-rw-r--r--  1 root root   17 Oct 10 10:31 hardlinkorg2.txt
+-rw-r--r--  1 root root  162 Oct 22 15:39 mem.txt
+drwxr-xr-x  2 root root 4.0K Oct 10 10:07 mywebapp/
+-rw-r--r--  1 root root  10K Oct 10 10:08 mywebartifact.tar
+-rw-r--r--  1 root root    4 Oct 21 16:30 ouputdir1.txt
+-rwxr-xr-x  1 root root  102 Oct 16 10:22 samplearray.sh*
+-rwxr-xr-x  1 root root   77 Oct 16 10:25 sampleshell.sh*
+lrwxrwxrwx  1 root root    8 Oct 10 10:29 soft2.txt -> org1.txt
+lrwxrwxrwx  1 root root    8 Oct 10 10:29 softlink.txt -> org1.txt
+-rwxrwxrwx  1 root root 2.7K Oct 21 15:30 tools.sh*
+-rw-r--r--  1 root root  688 Oct 20 22:14 unistalltool.sh
+-rwxr-xr-x  1 root root   37 Oct 12 10:05 var1.sh*
+-rwxrwxrwx  1 root root  123 Oct 12 10:15 var2.sh*
+-rwxrwxrwx  1 root root   54 Oct 12 10:28 var3.sh*
+-rwxrwxrwx  1 root root   70 Oct 13 09:51 var4.sh*
+---x--x--x  1 root root  392 Oct 13 10:01 var5.sh*
+-rwxr-xr-x  1 root root  530 Oct 13 10:23 var6.sh*
+
+
+ll -h | cut -d "," -f6 
+
+ll -h | awk '{print $5, $9}'   --> to display only 6th and 9th fields ) 
+
+ls -h | awk '{printf "%-15s %s\n", $1,$3, $9}'   -->  to display only 5th and 9th fields with proper format using printf ) 
+
+ls -l | awk '{printf "%-15s %-15s %s\n", $1,$3,$9}
+
+ll -h | awk '{printf "%-6s %s\n", $5, $9}'> filesize.txt 
+
+ll -h | awk '{print $6, $9}' |sed '/^$/d'    --> using caret(care-it) ^ $ to remove the spaces or empty lines  among lines in a file 
+ll -h | awk '{print $6, $9}' | grep -v ^$   
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+find :
+
+man find
+
+find command is used to search and locate the list of files and dir based on conditions you specify for files that match the arguments. find can be used in a variety of conditions like you can find by permissions, users, groups, file type, date, size , etc ...
+
+You can learn about the find command and its options.
+
+
+options :
+1) -name   --> file1. --> to search a file in any dir and whether the file exist or not in local machine 
+
+
+2) -iname
+3) -type f
+4) -type d
+
+--------------------
+
+how this command works 
+
+ex: you want to search a file in your system 
+
+syntax :
+
+find path options 
+
+find   --> this command will list complete path of file and directory in particular dir or system .
+
+find . -name var.sh
+options :
+
+1) -name    --> 
+
+find . -name var.sh    --> 
+
+find . -name "*.sh" 
+
+find / -name "*.pem"  
+
+find / -name context.xml 
+
+
+2) -iname   --> i means  ignore the case sensitive / case insensitive or it considers the uppercase and lower case 
+
+3) -type f   --> to display the regular files 
+
+find . -type f 
+
+----
+1. How to find or search  the last( past) 7 days modified files ?
+
+-mtime --> using this argument we list the last modified files 
+
+-  -> To list files modified within the last 7 days (including today), you can use the -mtime option with -7 ( ex : 27 th-20th)
+
+find . -mtime -7
+
+
++   -> To list files modified between 7 days and 14 days ago but but not within or the last 7 days,  (e.g., files modified from the 7th day to the 14th day ago) ( ex : 20 th -->  13th)  
+
+find . -mtime +7
+
+
+2. How to find the last 60 days modifiled files or created files 
+
+find . -mtime -60
+
+
+3. how to find only hidden regular files 
+
+find . -type f -name '.*'
+
+
+------
+du -> disk usage of file or dir 
+
+df  -> disk usage of file system 
+
+
+3 ways to find the large file in the system 
+
+1.find /home/manjunathachar -type f -exec du -h {} + | sort -rh | head -n 1     -> to find the largest file in the linux
+
+2.sudo du -h /home | sort -rh | head -n 1   -> to find the largest file in the linux
+
+find /home/manjunathachar -type f -exec du -h {} + | sort -h | head -n 1      -> to find the smallest file in the linux
+
+rm /path/to/folder/*.txt      			 -> Delete files using wildcards (e.g., all files with a specific extension):
+
+3. (NCurses Disk Usage):ncdu - >>> more advanced tool for analyzing disk usage of files/folders on local server . It provides a more interactive and user-friendly way to find large files and directories.
+
+sudo apt-get install ncdu   # For Debian/Ubuntu
+sudo yum install ncdu       # For Fedora/CentOS/Red Hat
+
+ncdu /home  
+ncdu -e
+
+find . -inum 34872
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+man grep
+
+GREP COMMAND
+
+global regular expression print
+
+basically it searches for a word and print or display the content , according to the option which you have used .
+
+it's going to search a file, content file based pattern 
+
+filter the content of a file
+
+syntax :
+
+grep "searchword" filename
+
+grep is mostly used with piping ( | ).
+
+create file with some content
+apple is my favorite
+my favorites fruits apple ,mango,durian,
+tomato
+chilli
+grapes
+Apple is good for the health
+I eat 4 AppleS in a week .
+
+
+root@manjunathachar-k-t:~/bashdemo# cat grep.sh | grep apple
+apple is my favorite
+my favorites fruits apple ,mango,durian,
+root@manjunathachar-k-t:~/bashdemo# grep apple grep.sh 
+apple is my favorite
+my favorites fruits apple ,mango,durian,
+
+grep -i "apple" grep.sh    --> to search a words with case insensitive or ignore the case sensitive 
+
+grep -v "apple" grep.sh    ->  to display the words which not matching with "apple"  ,
+
+grep -c "apple" grep.sh     -->  to display the counts of line of the word, 
+
+grep -o "apple" grep.sh   --> to display the match words only ( not  with entire lines ) .
+
+grep -n "apple" grep.sh   --> to display the the words with their line numbers  
+
+grep -A1 "apple" grep.sh   --> to display the specific word line with next line only
+
+grep -B1 "apple" grep.sh   ---> to display the specific word line with previous line 
+
+grep -C3 "apple" grep.sh   ---> to display the specific word line with previous line and next line
+
+-------------------------------------------------------------------------------------------------------------------------------
+awk command -> https://www.youtube.com/watch?v=CnfQxD9aNVs
+
+this command is very important for scripting .
+
+Syntax :
+
+awk ‘BEGIN {start_action} {action} END {stop_action}’ filename
+
+
+awk '{print }' filename 
+
+ls -l | awk '{print $1 $3}'
+
+let me explain about awk command with simple examples
+
+Example 1:
+
+How to print entire  data of the file
+
+cat filename | awk '{print}'
+cat filename | awk '{print$0}'
+
+both "awk '{print}' and awk '{print$0}' " used to print entire data
+
+
+Example 2:
+
+How to print  very first column
+
+cat filename |  awk '{print$1}'     --> to display the first columns 
+
+awk '{print$1}' filename  --> used to print very first column  
+awk '{print$2}' file name -->  used to print second column   --> to print specific multiple columns at a time
+
+awk '{print$2,$3,$4}'   --> used to print 2nd,3rd,4th columns   --> to print specific multiple columns at a time
+
+
+Example 3:
+
+How to print pattern Matching Technique in Awk.
+
+free -m | awk '/Mem/{print}'   --> to print the Mem row 
+
+
+here, we are matching Mem using awk '{/Mem/print}'
+
+Example 4:
+
+How to Print multiple column at the time.
+
+free -h | awk '/Mem/{print$1,$2,$4}'    
+
+here, we are print 1st,2nd,3rd columns at the time.
+
+Example 5:
+
+How to Print line number using variable NR
+
+free -h | awk '{print NR,$0}'
+
+Example 6:
+
+How to print specific linesF
+
+free -h | awk '{print NR,$0}'   --> to print the line with system variables ( NR -> Number of records )
+
+free -h | awk 'NR==1,NR==2 {print NR,$0}'   --> to print the lines from line1 to  line3 with variables 
+
+Here,we are print lines between 1 & 2.
+
+Real time
+
+ll -lrth | awk '{print$9}'       --> to print the specific columns of files ( l- list ,r- reverse , t- time , h- human readable )
+
+ll -lrth | awk '{print$1,$9}'  -->  to print the specific columns of files and their permission ( l- list ,r- reverse , t- time , h- human readable                       
+
+Filter data manipulation
+
+cat listofusers.txt | awk '$4~/M/'
+
+
+cat listofusers.txt | awk '{print NF}'    -> This command prints the value of the last field in each line.
+
+
+cat listofusers.txt | awk '{print (NF-1)}' //second last coloum in a file 
+
+-------------------------------------------------------------------------------------------------------------------------------
+sed   --> https://www.youtube.com/watch?v=ERoQssdqu18&list=RDCMUCBykMQqQ0q7GsC-u-YPimBA&index=2
+
+It used to replacing,searching,delete,insert data & also is mostly used command in scripting
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+sed (stream editor) command  -> you have file with 10 files , the lines start with DOG , you want replace DOG with BAT 
+
+sed  's/dog/bat/g' file2.txt           ( to make one time changes in the file)
+sed -i 's/dog/bat/g' file2.txt          ( -i used to make permanent changes in the file)
+
+
+
+============================
+
+config 
+
+
+
+
+
+
+
+
+
+
+
+
+
+manjunathachar@manjunathachar-k-t:~/linuxdemo$ cat file2.txt 
+my sample file 2
+apple
+ball
+cat 
+dog
+egg
+dog
+dog
+man
+flower
+dog
+watch
+mobile
+macbook
+iphone
+
+
+manjunathachar@manjunathachar-k-t:~$ sed -i 's/dog/bat/g' file2.txt
+manjunathachar@manjunathachar-k-t:~$ cat s1.txt 
+dkdk
+baetc
+etc
+line
+etcort
+long
+break 
+etc
+etc
+etc
+----------------------------
+systax 
+
+sed OPTIONS... [SCRIPT] [INPUTFILE...] 
+
+Example:1
+
+How to replace word with another word name.
+
+cat nagios.txt | sed 's/Nagios/nagios/'
+
+here,we replaced Nagios with nagios 
+
+Example:2
+How to replace word with another word name using global variable.
+
+cat nagios.txt | sed 's/Nagios/nagios/g'
+
+here,we replaced Nagios with nagios all places
+
+Example:3
+How to replace word with another word name nth line.
+
+cat nagios.txt | sed 's/Nagios/nagios/'2g'
+
+here,we replaced Nagios with nagios up to second line
+
+Example:4
+How to replace word with another word name in specific line.
+
+cat nagios.txt | sed '2 s/Nagios/nagios/'
+
+here,we replaced Nagios with nagios in second line only
+----------------------------------------
+
+How to delete lines from a particular file.
+
+1.To Delete a particular line say n in this example
+
+Syntax:
+$ sed 'nd' filename.txt
+
+Example:
+$ sed '2d' filename.txt   -> here,we are deleting 2nd line.
+
+
+
+2. To Delete a last line
+
+Syntax:
+$ sed '$d' filename.txt       -> here,we are deleting last line.
+
+
+3. To Delete line from range x to y
+
+Syntax:
+$ sed 'x,yd' filename.txt
+Example:
+$ sed '3,6d' filename.txt          -> here, we are deleting between 3rd and 6th line. 
+
+
+
+4. To Delete from nth to last line
+
+Syntax:
+$ sed 'nth,$d' filename.txt
+Example:
+$ sed '12,$d' filename.txt       -> here, we are deleting between 12th line to last line.
+
+
+5. To Delete pattern matching line
+
+Syntax:
+$ sed '/pattern/d' filename.txt
+Example:
+$ sed '/abc/d' filename.txt                     --> here,we are deleting abc word.
+
+
+
+---------------------------------------
+
+How to add pdf at the end of the file
+
+cat numbers.txt | xargs -r |sed 's/ /.pdf /g'      --> 
+
+========================================================================================================================
+
+Soft Links (Symbolic Links) and Hard Links:
+
+
+/bin/ -> /home/  
+
+
+
+
+Soft Links (Symbolic Links):
+
+Soft links have different inode numbers because they are essentially separate files that point to the target file's path. They are symbolic references.
+
+1. Managing Configurations:
+
+Use soft links to manage configuration files centrally. For example, you have a common configuration file for an application, and each deployment environment requires a slightly different configuration. You can create soft links to the common configuration file in each environment.
+
+
+ln -s /path/to/common/config.conf /path/to/environment/config.conf
+
+2. Versioning and Rollbacks:
+
+Soft links can be used in versioning and rollback scenarios. For instance, you deploy a new version of your application, and the latest configuration is linked to a specific version. If there are issues, rolling back involves switching the soft link back to the previous version.
+bash
+
+ln -s /path/to/versions/v2.0/config.conf /path/to/current/config.conf
+
+3. Dependency Management:
+
+When working with software dependencies, you might use soft links to manage libraries or modules. For example, a deployment might require a specific version of a library, and a soft link can be created to the appropriate version.
+
+ln -s /path/to/libraries/libv1.2.so /path/to/application/lib/lib.so
+
+----
+
+Hard Links:
+
+Hard links, on the other hand, share the same inode number with the original file. They reference the same data blocks on the disk, and changes made to one file are reflected in all files linked to the same inode.
+
+
+1. Efficient Data Backups:
+
+Hard links can be useful for creating efficient backups. Instead of duplicating entire files, hard links can be created to the existing files. This ensures that changes to one file are reflected in the other, while saving storage space.
+
+ln /path/to/source/file.txt /path/to/backup/file_backup.txt
+
+
+2. Shared Log Files:
+
+In a distributed system where multiple components need to write to the same log file, hard links can be used to share the same physical file on disk, providing a unified log view.
+
+ln /var/log/application.log /var/log/component1.log
+ln /var/log/application.log /var/log/component2.log
+
+3. Managing Identical Content:
+
+Hard links are useful when you have multiple instances of identical files across your system. Instead of having multiple copies, hard links allow different filenames to point to the same data blocks.
+
+ln /path/to/common/file.txt /path/to/another/location/file_alias.txt
+
+-----
+
+softlink and hardlink files
+
+
+ls -i file1 file2     -> to get  i nodes for particular files 
+
+find . -inum 12345 -delete    -> deleting files using i node values 
+
+
+
+org1.txt
+
+ln -s org1.txt softlink.txt        -> to create soft link for org1.txt, as soon as u delete the org1 file , softlink file also be  deleted automatically
+
+org2.txt
+
+ln org2.txt hardlink.txt             -> to create hardlink for org2.txt, as soon as u delete the org2 file and hard link will be remain same, it's link copy of org2 file and used for back up for secretes 
+
+----
+cronjob
+
+A cron job is a scheduled task or command that runs automatically at specified intervals on a Unix or Unix-like system, such as Linux. It is used for automating repetitive tasks, such as backups, updates, and maintenance.
+
+
+Crontab:It is used to Schedule jobs.
+
+Crontab –l: -l is used to List out the job for current user.
+
+Crontab –e:-e is used to edit schedule jobs for current user. 
+
+Crontab –r:-r is used to remove all job for current user.      -> note : Don't try this command until unless remove jobs.
+
+Crontab –e –u <Username> : It is used to edit jobs for particular user. 
+
+
+Cat /etc/crontab : It used to check cron job info.
+
+*/1 * * *  * /root/cpu.sh >> output.txt   
+
+   *             *               *                    *            *
+Minute         Hour         Day of month             Month      Day of week  
+(0 - 59)     (0 - 23)         (1 - 31)              (1 - 12)     (0 -6 ) ( sun =0 or 7)
+ 
+ 
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  . ------- month (1 - 12) OR Jan, feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR 
+# |  |  |  |  |
+# *  *  *  *  *    -> time pattern 
+
+Be practice below examples which are very useful in real time environment.
+
+*/1 – Every one minute 
+*/1-   Every one hour
+1-31 Day of the month
+1-12(Jan to Dec)
+0-6(Sunday to Monday) 0Sunday, 1Monday, 2Thesday
+
+
+*  *   * * *    -> for every minutes
+0  *   * * *    -> for every hour 0th min
+0 12   * * *    -> @12 pm(noon) every day
+0  0   8 * *    ->  every month 8th day
+0  3   * * 0    ->  Every sunday
+0 7-18 * * *    ->  b/w 7am to 6 pm
+0 5,8,12 * * *  ->  @5,8,12 
+*/5 * * * *    -> every 5 min interval 
+
+Every day 7-18
+* 7-18 * * *  /root/cpu.sh 
+
+Every month 15,16 dates
+* * 15,16 * *  /root/cpu.sh 
+
+6 Month one time only
+* * * 6 *  /root/cpu.sh 
+Every Tues day
+* * * * 2  /root/cpu.sh 
+
+0
+
+Scheduled Script Execution:  -> Running a script periodically.
+
+# Edit the crontab
+crontab -e
+
+# Run a script every day at 2 AM
+0 2 * * * /path/to/script.sh
+
+
+System Updates:   ->  Automatically updating the system or packages.
+
+# Update system packages every Sunday at 3 AM
+0 3 * * 0 yum update -y
+
+Backup Database:  -> Scheduled backup of a database.
+
+# Backup MySQL database every day at 1 AM
+0 1 * * * /path/to/mysqldump -u username -p password dbname > /path/to/backup.sql
+
+Cleanup Temporary Files:  -> Cleaning up temporary files.
+
+# Cleanup temp files every week on Sunday at 4 AM
+0 4 * * 0 find /path/to/temp -type f -mtime +7 -exec rm {} \;
+
+
+ex:
+
+=============
+useradd -m -d /home/devopsadmin devopsadmin
+
+passwd devopsadmin
+
+su - devopsadmin
+
+ssh-keygen    
+
+ls ~/.ssh 
+
+#You should see following two files:
+
+#id_rsa - private key
+#id_rsa.pub - public
+
+cd /home/devopsadmin/.ssh
+
+cat id_rsa.pub > authorized_keys
+
+chown -R devopsadmin /home/devopsadmin/.ssh
+chmod 600 /home/devopsadmin/.ssh/authorized_keys
+chmod 700 /home/devopsadmin/.ssh
+
+#make devopsadmin user as a owner to tomcat dir :
+
+chown -R devopsadmin /opt/tomcat
+
+/home/devopsadmin	
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+SHELL SCRIPTING :-
+
+shell -> Command line interpreter , Program, interface between user and  kernel , scripting language , used for terminal commands , easy to write , it's a main component in linux os 
+
+
+compiler and interpreter 
+
+
+program which converts high level language to machine code  lower language ( 0 , 1 )
+
+
+ebs ->  snapshot 
+
+
+python 
+
+             compiling phase                         executing phase 
+source code --------------------  compiler      -----------------------         jvm, pvm 
+             line by line        compiled code                                  
+                                 pyc - bytecode                                  convert the bytecode into machine understanble lan, human understand language 
+
+
+
+
+commands     ->        shell   ---->    hard ware components                            
+
+ls   - l                            
+
+
+
+
+
+
+
+
+
+
+A.BASH SCRIPTING 
+
+"Shell" is a program, which facilitates the interaction between the user and operating system (kernel). There are many shells available in linux by default like sh, bash, csh, zsh ,rbash, dash...etc.
+
+ 1) "Shell" scripting is a way of automating things, in the form of collection of commands. The control of execution is steered by the predefined control statements.
+
+2) "Bash shell" scripting is, a kind of shell scripting only. You can say, its a subset of "shell" scripting.
+
+3) "sh" is the original (Bourne) shell, having its root from the old Unix. "bash", is "Bourne Again SHell", which is rewritten "sh".
+
+4) Bash is the most widely used shell. It comes with Linux by default, having backward compatibility with sh (though sh is also there). But, you can choose any shell you want.
+
+ 5) For more information, do:
+ 
+$~ man bash
+
+shell scripting : 
+
+
+filename.xlsx 
+
+filename.txt
+filename.doc
+filname.gz
+
+filename.sh
+
+
+
+
+
+.sh  --> it's not mandatory , but we are going to specify the file , without using .sh u can run the script . for other language files, the extension is mandatory
+.java
+.py
+.rb -> ruby
+.sc  -> scaller
+.c
+.cpp  -> c++
+.go  --> go language
+.js  --> nodejs
+
+
+java  filname.java
+
+python  filname.py
+
+node    filename.js
+
+--------
+
+
+to see the current shell
+
+variables 
+
+system pre defined /env  variables  ex: $USER , $SHELL , $PATH , 
+user defined variables   -> JAVA_HOME , MAVEN_HOME , 
+
+system pre defined commands  -> ls , echo , ll , who , last , id -u , 
+system pre defined arguments / special variable in linux   , $0 , $1, $#,$@,$?, $$, 
+
+
+echo $USER
+
+env or printenv
+
+
+echo $0   -> on terminal -> to display the current shell   
+
+$0 arg inside script is consider as value of the script name 
+
+ps -p $$
+
+echo $SHELL
+--
+
+why we need to learn shell scripting
+
+Automate your regular jobs, or to avoid manual tasks
+
+Taking database backup
+
+monitoring several server resources like cpu utilization and memory utilization
+
+Portable( it can be executed in any unitxl like operating system without any mdificatins )
+
+
+let's talk about some popular database
+
+Relational databases
+---------------------
+Oracle
+MySQL --> oss
+Postgre SQL  --> oss
+MS SQL server
+DB2 --IBM
+
+
+
+non-relational or no sql databases
+------------------------------
+mongo db
+cloudant
+casandra
+
+
+DIFF BETWEEN relational database and non relational database
+
+relational database:
+
+data which stored in structured format , like in terms rows and columns 
+
+stored in the tables format
+
+No sql datase:
+
+no table
+data is stored in document
+
+key value pair , in json format or yaml format 
+
+how can you choose the database
+
+for MYSQL(relational database) -> it is for big data, for more updatation , modificatins
+
+
+for no sql database --> if your applicatin is very small, you want to display some products , where you dont want update , insert , delete the data, where you can use NO SQL database. 
+
+as devops , u should know , how to install the database and manipulate database using some basic queries . 
+
+as a DBA --> DATABASE ADMIN--> has to take backup of database for hourly basis .
+
+
+--
+interview question:
+
+which scripting language do you know ?
+
+shell scripting
+
+can you tell me some of scripting which you created ?
+
+dbbackup.sh 
+
+do you know sql queries ?
+
+if you know , say yes, or i have no idea, but i know the installation process, creating shell scripts, coz , my dba ask me to write a script for database backcup , i created .
+
+
+blob , git blob
+
+a=10
+print(a)
+
+varchar placename-pincode 
+----------
+---
+
+serverresourcesmonitor.sh 
+
+can you what will this script do ?
+
+monitor the server resources 
+cpu
+ram
+harddisk
+
+free
+df
+top
+
+mail  -> whenever threshold =80 , will get notification , 
+
+sed
+
+hostname -> whenever threshold =80 , will get notification ,
+ifconfig
+
+
+now a days , we are not going to use these kind of scripts, coz , we have dedicated monitoring tools, prometheus and grafana -> these tools can monitor the servers 
+
+
+
+deploy.sh 
+to deploy the application into the tomcat server . 
+
+cleanup.sh 
+
+to cleanup the server .
+find
+rm
+mail
+cronjob
+
+
+PRE REQUISITES FOR SHELL SCRIPTING
+
+LINUX/UNIX SERVER --> WINDOWS never works, even somebody ask that, i installed gitbash, mobexterm , but u cant use all commands , like shutdown , reboot. 
+
+
+Knowledge on linux commands with various options
+
+
+Basic knowledge of programming . 
+
+STEPS TO WRITE SHELL SCRIPT
+
+STEP 1) Use any editor like vim or nano to write shell script       
+
+in nano text editor -> ctrl + s and ctrl +x  
+
+Example:
+
+vim hello.sh  -> start vim editor
+
+STEP 2) after writing shell script set execute permission for your script as follows 
+
+syntax : chmod <permission> <script name>
+
+
+--x--x--x
+001001001
+ chmod 111 filename.sh
+
+ex: chmod +x or 111 script file name
+
+step 3) execute the your script as 
+syntax : bash <script file name>
+         sh <script file name>
+         ./<script file name>
+         .<script file name>
+         
+vim hello.sh
+COMMAND MODE
+Press the i --> INSERT MODE
+
+#!/bin/bash --> shebang or hash bang line( this line is not mandatory , anyway it will consider default , that's bash, but if want to use other shell, in that case you need to specify the shebang)
+
+
+echo "hello guys
+echo "good morning"
+
+
+helloworld.py
+
+a= "Hello world"
+print(a,type(a))
+
+helloworld.sh
+
+#!/bin/bash
+
+echo "Hello world"
+
+
+
+
+
+press the ESC key --> COMMAND MODE
+
+:wq!
+
+run the script 
+
+-----------------
+part 2
+-----------------
+
+
+
+running a script in debug mode -> how to run shell script in debug mode -> interview question 
+
+
+
+
+When a script is run with debugging mode, you'll see the following effects:
+
+Each command in the script will be printed to the terminal before it is executed.
+Variables and their values will be displayed during execution.
+Error messages and their details will be shown.
+You'll get a trace of function calls.
+
+different ways to run the script in debug mode : 
+
+1.Use -x Option for Execution Trace
+bash -x script.sh
+2. Enable Verbose Mode with -v  -> The -v option displays each line of code before it’s executed, making it easy to check syntax and the flow of the script.
+bash -v script.sh
+
+3. Combine -xv for Detailed Debugging
+
+bash -xv script.sh
+
+4. Use trap to Catch Errors
+
+trap 'echo "Error occurred at line $LINENO"; exit 1' ERR
+
+
+
+vim file1.sh
+#!/bin/bash
+NAME=John
+GM=Goodmoring
+echo "hi, $GM  my name is ${NAME}"
+
+
+
+./file1.sh --> normal method 
+
+hi, Goodmoring  my name is John
+
+bash -x ./v1.sh   --> debug method or debug mode
+
++ NAME=John
++ GM=Goodmoring
++ echo 'hi, Goodmoring  my name is John'
+hi, Goodmoring  my name is John
+
+-----
+if you want run some line in debug mode in the script 
+
+ex : echo "hi, $GM  my name is ${NAME}"
+
+set -x -> start the debug mode
+set +x --> stop the debug mode
+
+#!/bin/bash
+NAME=John
+GM=Goodmoring
+set -x    
+echo "hi, $GM  my name is ${NAME}"
+set +x 
+echo "how are you doing"
+date
+
+./file1.sh
+
+if you run --> bash -x file1.sh --> it will start from beginning in debug mode , once it's reached set +x , it will stop debug mode forcefully.
+
+
+file naming convention 
+
+roboshopPojectBackup.sh   
+
+ 1. a file name can be a maximum of 255 characters
+ 2. the name may contain alphabets, digits, dots, and underscores .
+ 
+ 3. system commands or linux reserve words can not be used for file names( ls ,mkdir)
+ 
+ 4. file system is case sensitive.
+ 5) some of valid finenames n linux are 
+ 
+file.sh
+File.sh
+File_123.sh
+File123.sh
+
+
+
+for variable /file name  :
+---
+Lowercase (one variable):
+
+person = "manju"
+
+Snake Casing:
+
+user_name = "manjunath"
+
+Camel Casing:
+
+ec2InstanceUser = "manjunath"
+Descriptive (not following conventions):
+
+nm = "manju"  # Not descriptive
+
+full_name = "manju"  # Descriptive, annotation
+
+GoodMorning
+
+gm=good_morning
+vgm
+
+
+
+Lowercase (multiple words):
+
+first_name = "manju"
+last_name = "Achar"
+
+Snake Casing (multiple words):
+
+user_age = 25
+user_email_address = "example@example.com"
+
+Camel Casing (multiple words):
+
+numberOfStudents = 50
+studentGradesAverage = 85.5
+
+Descriptive (multiple words):
+
+car_make = "Toyota"
+car_model = "Camry"
+
+lowercase
+UPPERCASE 
+snake_case
+CamelCase
+camelCase 
+
+
+---
+
+
+COMMENTS :
+
+usually , used to describe the functions in the script.
+
+
+#!/bin/bash
+
+# author name : 
+# date 
+# description
+
+# updating the system
+sudo apt-get update -y 
+
+# installing git
+#sudo apt-get install git -y
+
+
+
+
+
+
+
+
+ex : add () {
+...
+....
+}
+if you share the same script to someone with comment , how can they understand , to make it understandable about the funtions, where we use comments
+
+
+types of comments, any language has 2 types of comments except java
+
+2 types
+single line comment
+multi line comment
+
+in java
+//  s l c 
+
+/*
+
+first line code
+second line code
+third line code 
+int a = 23
+
+...   m l c
+*/
+
+documentation related comments
+
+/**
+....
+....
+....   
+*/
+
+c/c++/sh
+
+# --> s l c in shell script
+
+<<stringname
+.....  
+.....
+.....
+stringname
+--------
+<<Manju
+...          m l c in shell script, HERE DOCUMENT FEAUTURE 
+Manju
+
+------
+in bash script 
+in xml file
+
+# -> s l c 
+<!--
+........    m l c 
+........
+-->
+
+
+
+
+in groovy file -> jenkins file 
+
+//  -> s l c 
+
+/*
+
+
+*/
+
+
+in yaml file
+
+
+# 
+
+
+
+
+
+comments are used to escape from the code 
+this part of the code will be ignored by the program interpreter
+adding comments make things easy for the programmer, while editing the code in future
+
+single line comment can be do using #
+# this line is commented 
+
+multiline comments can be do using HERE DOCUMENT feature as  follows
+
+
+-------------
+
+VARIABLES :
+
+A Variable is a character, string to which we assign a value. the value assigned could be a number text,filename, device, or any other type of data.
+
+there are 2 types of variable in linux shell script
+
+1. system pre defined variables
+2. user defined variables   -> 
+3. env variables 
+
+10
+
+in shell script
+
+vim file.sh
+
+var1=10
+
+echo $var1
+
+./file.sh
+
+
+in python
+a=10
+print(a)
+output : 10
+
+echo $a
+
+SHELL=
+
+echo $SHELL
+
+
+$var1   -> is to define and display  the value of the variable 
+
+
+
+
+
+1.system pre defined variables and env 
+--------------------------------
+command to display the  system defined variables
+
+env
+
+printenv
+
+
+System Predefined Variables:
+
+$HOME: The home directory of the user.
+$USER: The username of the current user.
+$PWD: The present working directory.
+$SHELL: /bin/bash The path to the shell.
+$PATH : usr/bin/
+
+
+/bin/bash -> echo ls, 
+
+/usr/bin/  git , mvn, 
+
+git add .
+git rm 
+git commit 
+
+Common Environment Variables for DevOps: -> user defined variables 
+
+$JENKINS_HOME: The Jenkins home directory, where Jenkins stores its configuration and data.
+$JAVA_HOME: As seen in the script, it points to the Java installation directory.
+$PATH: The search path for executable files.
+$AWS_ACCESS_KEY_ID and $AWS_SECRET_ACCESS_KEY: AWS credentials for interacting with AWS services.
+$DOCKER_HOST and $DOCKER_CERT_PATH: Variables used for Docker configuration.
+
+
+how can you store the sensitive credentials of any project on local system
+
+1. set up env variable directly 
+
+2. create .env file , and store the credential 
+
+--------------
+
+myplace=bangalore 
+
+
+bash program -> it's always going to validate the commands( /bin/bash) and variables( .bashrc and or (.bash_profile or .profile)
+
+
+there two system configuration files in linux
+
+.bashrc   -
+.profile   ( in debian )
+.bash_profile ( in fedora )
+
+.bashrc  -> bash resource configuration file -> java,git,jenkins,maven  , 
+
+ls, echo $USER , ./var.sh    ->  
+
+echo $myplace
+
+
+
+echo $JAVA_HOME
+echo $MAVEN_HOME 
+
+export -> It's a function that used to define the USER DEFINED VARIABLE in .bashrc or .bash_profile 
+
+export JAVA_HOME=/usr/lib/jvm/OpenJDK:11
+export MAVEN_HOME=/opt/maven
+export myplace=bangalore
+
+
+.profile ->
+
+# -> root user
+$ -> normal user
+/ -> root home dir
+~ -> /home/manjunathachar  dir 
+
+~/.bashrc
+~/.profile
+
+source ~/.bashrc 
+source ~/.profile 
+ 
+ 
+ 
+VARIABLENAME=VARValue
+
+echo $HISTSIZE
+1000
+
+see here, history size is 1000(The value "1000" in the context of HISTSIZE means that your shell (such as Bash) is configured to retain the last 1000 commands you've executed in its command history. This is the maximum number of commands that will be stored in the history list.) by default, is this possible to change size , yes , where we use export command
+
+
+export function ,
+
+it's a statement , which used to pass enviroment variables to other process
+
+export HISTSIZE=20000
+echo $HISTSIZE 
+
+---
+
+MYTEAM=RCB
+echo $MYTEAM
+
+printenv MYTEAM
+
+export MYTEAM
+
+printenv BBTEAM
+
+export HISTSIZE=20000,this is for temporary changes, once you reboot the system, it will consider the default 1000, if you want to make it permanently, 
+
+where we use .bashrc or .bash_profile
+
+
+
+In Linux, both .bashrc and .bash_profile are configuration files related to the Bash shell, and they play a role in customizing the shell environment for users.
+
+.bashrc: shell -> bash shell( resource or tools ) level configuration 
+
+This file is often referred to as the Bash Resource Configuration file.
+
+It is specific to each user and is usually located in the user's home directory (~/.bashrc).
+
+It is executed every time a new terminal session is started or a new shell is opened.
+
+It typically contains settings and configurations for the Bash shell, such as aliases, prompt configurations, and environment variables.
+
+.bash_profile or .profile    -> system level configuration 
+
+This file is executed when you log in to the system.
+
+It is also specific to each user and is usually located in the user's home directory (~/.bash_profile).
+
+If .bash_profile exists, Bash will execute it and ignore .bashrc during login.
+
+It is commonly used to set environment variables and perform tasks that should only happen once when you log in.
+
+Relationship between .bash_profile and .bashrc:
+
+When you start a login shell (for example, when you log in to the system), .bash_profile is executed.
+
+For non-login shells (such as opening a new terminal window or running a script), Bash will look for and execute .bashrc.
+
+
+demo.sh   -> #!/bin/bash
+
+
+etc/profile    -> 
+
+vim .bashrc or .bash_profile
+
+export HISTSIZE=20000
+
+-----------------------------------------------------
+
+in programming language-- data types
+
+
+int -> -30000 to 33000 it's exact number, short number 
+float -> 1.2 it's very short decimal number , 0.1
+boolean -> true(1) or false(0)
+string  -> "hi, some text"
+decimal -> 75656387937579797.098038080929 it's verybig exact decimal 
+double -> very big number
+
+
+
+2. user defined variables ,( for best practice we use lower case as variable name,u can also upper case )
+
+-----------------------
+a = 10
+echo $a
+output is 10
+
+$variable  -> value of variable
+
+$(name of command) ->  value of linux system pre defined commands (echo cat rm rf  mv cp mkdir)
+
+date= $(date)
+echo $a or echo ${a}
+w_d= $(pwd)
+echo $a
+user_id=$(id -u)
+
+user_id=4748484 
+
+
+
+
+How can you assign the predefined command to variable ?
+
+
+DATE=$(date)    $(name of command)      $(date +%a)  
+
+echo $DATE
+
+
+name=manjunath
+
+date 
+
+echo 
+ls
+pwd
+
+a=10
+echo $a
+echo $date
+
+
+
+
+
+ 
+
+a=$(system defined command) means a=$(date)
+
+echo $a
+output is today's date .
+
+user_id=$(id -u ) 
+echo $user_id
+output is 1000->normal user
+output is 0 -> root user
+
+
+
+
+system pre defined commands / env variables / user defined variable /special variables ($#@!?) , $? -> exit status 
+
+
+
+
+
+it's customized user variabls,
+
+ex: int data type
+
+in c/cpp/java
+
+declaring the variables
+int a;
+int b;
+int c;
+
+a=10
+
+str
+
+
+initialisation the variables,( creating and assigning the value to variables )
+int a = 10;
+int b = 20;
+int c = 30;
+
+
+
+in shell script there is no data type in shell script like this 
+
+in shell script
+
+a=10  ( there is no space between variable name and value ) 
+b=34
+c=45
+
+echo $a or echo ${a}
+
+a=10
+b=20
+c=30
+b=23
+
+echo $a
+echo $b 
+echo $c
+echo $b
+
+---
+manjunathachar@manjunathachar-k-t:~/linuxdemo$ ./ee.sh 
+10
+23
+30
+23
+---
+manjunathachar@manjunathachar-k-t:~/linuxdemo$ cat ee.sh 
+a=10
+b=20
+c=30
+b= 23
+echo $a
+echo $b 
+echo $c
+echo $b
+--------------
+shell script override the values ,will consider last one 
+
+if you want to print with some message
+
+echo "the value of c is : $c"
+
+============================================ 
+
+let's use system defined ( can we use system defined variables in shell script, yes we can )
+
+
+echo "the username is : $USER "
+echo " the shell name is : $SHELL "
+
+
+
+---
+manjunathachar@manjunathachar-k-t:~/linuxdemo$ ./sysvariable.sh 
+the username is : manjunathachar 
+ the shell name is : /bin/bash 
+---
+============================
+
+
+can i assign the user defined variable to system defined variable , YES I CAN 
+
+whenever you are going to assign system defined variables or env variables and pre defined commands , you have to use $ sign as prefix  
+
+DATE=$(date)   -> assigning the value of system defined command to user defined variable
+name=$USER     -> assigning the value of env variable to user defined variable
+place=bangalore ->  assigning a normal value  to user defined variable
+
+
+
+
+
+echo "${name}"
+
+==================================
+
+
+1. how can you directly  create varibales and assign the values inside the shell scripting ?
+
+
+#!/bin/bash
+
+NAME=Ramesh          #don't give a space 
+echo "hi, ${NAME}"   # $NAME OR ${NAME} This is comment
+
+NAME="Ramesh"
+echo ${NAME}
+
+
+bash var1.sh
+sh var1.sh
+./var1.sh  
+
+
+2. how can you run  a command inside the shell script and get the value inside the variable ?
+
+
+date: 08/02/2024 , 08-02-2024 ,
+
+
+
+#!/bin/bash
+
+DATE=$(date +%F)    # syntax is DATE=$(name of command)
+
+DATE=$(date +%a)
+DATE=$(date +%A%B)
+DATE=$(date +%b)
+DATE=$(date +%B)
+DATE=$(date +%c)
+DATE=$(date +%C)
+
+       %%     a literal %
+
+       %a     locale's abbreviated weekday name (e.g., Sun)
+
+       %A     locale's full weekday name (e.g., Sunday)
+
+       %b     locale's abbreviated month name (e.g., Jan)
+
+       %B     locale's full month name (e.g., January)
+
+       %c     locale's date and time (e.g., Thu Mar  3 23:05:25 2005)
+
+       %C     century; like %Y, except omit last two digits (e.g., 20)
+
+       %d     day of month (e.g., 01)
+
+       %D     date; same as %m/%d/%y
+
+       %e     day of month, space padded; same as %_d
+
+       %F     full date; like %+4Y-%m-%d
+
+
+
+echo "today's date is ${DATE}"
+
+
+date 
+
+DATE=date -> assigning the value to DATE variable
+DATE=$(date)   -> assigning the value of command to DATE variable
+
+
+how can you assign system predefined command to user defined variable ?
+
+DATE=$(date)
+
+
+id -u 
+
+USER=$(id-u)
+
+echo $USER    -> 
+
+------------------------------
+
+COMMAND LINE ARGUMENTS(values)
+----------------------
+
+During shell script execution, values passing through command prompt is called as command line arguments
+
+
+variable_name=value for the variable
+key=arg
+name="Jhon"   -> hard coding 
+name="$1" 
+
+
+passing the values during the bash script execution  -> ./scriptname.sh 
+
+for ex:
+
+while running a shell script , we can specify the command line arguments as "shell scriptfile.sh arg1 arg2 arg3
+
+
+While using command line arguments follow the below important points
+
+we can specify n number of arguments , there is no limitation.
+
+each argument is separated by space .
+
+
+ex: i have a dbbackup.sh ,this file is for backup of your database, 
+
+earlier we used to do hard coding in script , 
+
+requirement, 
+
+you have different databases, want to store to some location . 
+
+./dbbackup.sh dbname dbloc
+
+
+$0 -- shell script name
+$1 --. first arg
+$2  --> 2nd arg
+$3   --> 3rd arg --> if there is no value for arg, it wont diplay anything.
+$20
+echo ${20}  --> if u want to get particular arg, and if it's morethan one digit, use curly braces  
+
+how to get number of arg :
+
+
+./sample.sh arg1 arg2 
+
+in script
+
+echo $#  --> to get number of args    
+echo $*  --> to  o display the all the arguments as single string 
+
+echo $@ --> to display the all the arguments as individual string 
+
+
+echo $$ --> to display the process ids(PIDS)
+
+echo $? (imp)--> to display the previous command execution status or exit status (  1 to 127 standard error code for 	) 
+
+----
+
+
+3. How can you pass the values to the shell script from outside through args/arguments.( it's another way of passing values to the variables)
+
+
+$0,$1,$#,$$,$?,$*,$@
+
+ hi ramesh Good morning
+
+
+in shell script: values take like ramesh($1), suresh($2), sachin($3)
+		          
+		          
+		          
+		          
+i want output like hi John  Good morning -----> (./v3.sh ramesh morning)
+
+#!/bin/bash
+NAME=$1
+WISH=$2
+
+echo "hi, ${NAME} Good ${WISH}"
+
+------------------
+vim clargs.sh  john bangalore 25 
+
+#!/bin/bash
+
+echo "c l args demo"
+echo "script file name : $0"
+echo "first arg : $1"
+echo "Second Arg : $2"
+echo "3rd arg : $3"
+echo "10th arg : ${10}"
+echo "number of args : $#"
+echo "All the args : $*"
+echo "All the args : $@"
+echo "pids : $$"
+echo "previous cmd execution status : $?" 
+
+
+
+
+=================================================================================================
+
+
+4 .how can you ask user to enter the values dynamically . i.e. read command 
+
+user input or user prompt 
+
+
+echo "Enter your Pin"   5758
+read PIN     -> INVISIBLE
+echo "select your bank account"
+read YOUR_BANK_ACCOUNT_TYPE    -> Saving bank
+echo "Enter the amount"
+read YOUR AMOUNT     -> VISIBLE 
+
+
+
+
+
+
+ex: running a script that connect to DB , where it asks username and password
+
+#!/bin/bash
+echo "please enter your name"
+read -s USERNAME                             #(if you don't use -s, it will show user name while user entering his name , people can see while he is entering , that's y where we use -s to hide  user name while user entering his user name )
+echo "user name is : ${USERNAME}"        # here echo command no need to use for user , because it displays the user name 
+echo "please enter your password"
+read -s PASSWORD
+echo "password is : ${PASSWORD}"         # here echo command is not recommanded to use for password , because it displays the password name
+
+==================================================================================================================================
+
+array -> list of elements or a group of same type of variables 
+
+element -> object,aspect , thing,
+
+forward indexing -> 0th element
+backward indexing -> -1 
+0th value
+
+
+
+ex :                Fruits = apple , banana , orange, mango, ( here we count element with indexing i .e begins with  0th element as first element ) 
+
+forward indexing              0        1        2     3  
+
+backword indexing            -4       -3       -2    -1
+
+                
+   forward indexing   -> begins with left to right  -> start with 0th element       
+   backword indexing  -> begins with right to left  -> start with -1th element 
+
+sudo vim array.sh
+#!/bin/bash
+FRUITS=("apple" "banana" "orange" "mango")    # array should be separated by spaces not COMMAS .
+echo "fruits at 0th element is : ${FRUITS[0]}"
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+ARITHMETIC OPERATIONS
+---------------------------
+
+
++
+_
+
+*
+/
+
+`expr opt1 + opt2`
+`expr 2 + 5`
+
+
+
+a=2
+b=3
+c=a+b
+echo $c
+
+
+
+
+
+
+we use the keyword "expr" to perform arithmetic operations . 
+
+
+syntax:
+
+`expr op1 math-operator op2`
+
+
+
+
+
+FileName: arithmetic_operation.sh
+
+`expr 3 + 2`   Addition:
+expr 3 - 2   Subtraction:
+expr 10 / 2   Division:
+expr 3/* 2  --> we use / it's a escape character ,  Multiplication:   * wild card 
+expr 20 % 3  --> Modulus (Remainder): it's modular operator, it gives reminder , if it's not divisible by exact number.
+
+
+echo additon of 3 and 2 is : `expr 3 + 2`
+
+Note : there must be spaces between the operations and the expression.
+
+for example: 3+2 is not correct
+
+it should be written as 3 + 2
+
+complete expression should be enclosed between ``, called the inverted commas,(two backticks)
+
+echo " the addition of 2 and 3 :   expr 2 + 3 " ❌️ --> it's going to print as it as , wont get result 
+echo " the addition of 2 and 3 : 'expr 2 + 3' " ❌️ --> it's going to print as it as , wont get result 
+echo " the addition of 2 and 3 : `expr 2 + 3` " ✅️ --> using this one , will get result as u expected
+
+-----
+vim argops.sh
+
+expr 3 + 2 
+expr 3 - 2
+expr 10 / 2
+expr 3/* 2  
+expr 20 % 3 
+
+
+write a shellscript to accept the 2 numbers from the user and perform the aruguments operators
+
+./argops.sh 34 54 
+
+expr $1 + $2
+expr 3 - 2
+expr 10 / 2
+
+
+
+
+---------------
+can you write a programme to addition of 2 numbers in shell script ( SHELL SCRIPT can understand whether the value in numerical values or not )
+
+#!/bin/bash
+NUMBER1=100
+NUMBER2=300
+RESULTS=$((NUMBER1 + NUMBER2))
+echo "addition result : ${RESULTS}"
+
+
+
+
+use arithmetic operators when you want to perform direct calculations on specific values, and use variables when you need to store and manage values for later use in your script. 
+
+In many cases, you'll use a combination of both, where variables hold values, and arithmetic operators perform calculations using those values.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+comparison operators / hints/clue for operators:
+
+= -> to assign the value to variable 
+
+
+
+ex: a=10
+
+
+
+-eq -> equal to    -> $a -eq 10   -> True
+-gt -> greater than -> $a -gt 10  -> False
+-lt -> lesser than  -> $a -lt  10 -> False
+-ge  -> greaterThan  or equal to   -> $a -ge 10  -> True 
+-le  -> lesserThan or equal to     -> $a -le 10  -> True 
+
+
+-eq  --> ==  --> equal to 
+-ne  --> !=  --> not equal to 
+-lt  --> <   --> lesser than
+-gt  --> >   --> greater than
+-le  --> <=  --> lesser than or equal to 
+-ge  --> >=  --> greater than or equal to 
+--------------------------------------
+
+#!/bin/bash
+
+echo "hi"
+pwd
+ls
+
+
+echo "hello'
+
+echo "good morning"
+
+
+
+which command is used to get previous command execution status ??
+
+$0  -> 
+$# 
+$? -> exit code status  -> 1 to 127 ( failure )  , 0 ( success code )
+
+
+control statement ?
+
+
+
+
+
+
+unfortunately shell don't care the error it will just move forward whether the command is correct or not , ultimately consider the last command 
+
+
+so , it's our responsibility to check the commands are executed successfully or not
+
+$? -- > (exit code ) 0 is success, if morethan 0 is failure (1 to 127)
+$? -> previous command execution status , 
+
+if execution is failed -> status would be between 1 to 127
+if execution is succeed -> status would be 0
+
+statements -> executable instructions , 
+
+-------
+
+CONTROL FLOW STATEMENTS :
+
+simple if 
+if else
+if elif 
+nested if 
+
+loop
+ for loop
+ while loop
+ 
+switch cases
+functions
+
+
+
+simple if condition
+
+function_name() {
+
+
+}
+        
+to express any condition , you must have atleast one variable 
+
+if [expression] ;
+then
+these commands run when expression is true 
+fi
+
+
+--------------------
+
+USER_ID=$(id -u)
+
+if [ $USER_ID -eq 0 ] ;
+then
+echo "user has root access"
+
+fi 
+
+
+--
+
+is 5 greater than 10   -> false
+is 5 -gt 0  -> true 
+
+
+#!/bin/bash
+
+# Example variables
+number=5
+
+# Simple if condition
+if [ $number -gt 10 ]; then
+    echo "The number is greater than zero."
+fi
+-------------
+
+
+there are two different way to pass the value to variable dynamically 
+
+1. using command line arg   ./scriptname.sh  arg1
+2. using read command  
+a. 
+echo "enter a number "
+read number
+
+if [ $number -ge 20]
+
+--
+b.
+
+read -p " enter a number " number
+
+if [$number -ge 20]
+
+
+
+#!/bin/bash
+
+read -p "Enter a number: " num
+
+# Simple if condition
+if [ $number -gt 10 ]; then
+    echo "The number is greater than zero."
+fi
+
+
+
+
+if (expression) {
+ sudo yum install git -y
+} 
+
+id -u -> normal user -> 1000
+id -u -> root user -> 0
+
+-eq -> equal to 
+-gt -> greater than
+-lt  -> lesser than
+-ge  -> greaterThan or equal to 
+-le  -> lesserThan or equal to 
+
+
+USER=$(id -u)
+
+if [$USER -eq 0] 
+ then 
+  echo "congrats, you have root access you can proceed"
+  
+fi
+
+switch cases:
+case 
+esac
+
+
+
+
+
+if the expression is false the function is not run at all 
+
+-----------------------------------------------------------------
+
+1. Simple if-else script:
+
+#!/bin/bash
+
+read -p "Enter a number: " num
+
+if [ $num -gt 10 ]; then
+  echo "The number is greater than 10."
+else
+  echo "The number is not greater than 10."
+fi
+
+
+Explanation:
+
+This script takes a number as input from the user.
+It checks if the number is greater than 10.
+If the number is greater, it prints "The number is greater than 10." Otherwise, it prints "The number is not greater than 10."
+
+=================================================================================================================================
+if else function
+
+Simple if-else script:
+
+Purpose: It helps the computer make a decision based on whether a condition is true or false. If the condition is true, one action is taken; if false, another action is taken.
+
+Real-time example: Think of a traffic light. If the traffic light is green, you can go (condition is true), but if it's red, you must stop (condition is false).
+
+
+if (expression) {
+these commands run when expression is true 
+} 
+else {
+these commands run when expression is false
+}
+
+
+
+if (exit code is 0 ) {
+then print successfully installed
+}
+else{
+then print failure
+} 
+------------
+
+
+conditions :
+
+write a script to pass only two args 
+
+system pre defined argument or special varibles 
+$0
+$1
+$2
+$# -> no.of agrs
+$? -> previous command execution status
+$@ -> name of args
+@* -> name of args 
+
+
+
+
+if [ $# -eq 2 ] then
+
+echo " this is my first args : $1 "
+echo " this is my second args : $2 "
+echo " this is my 3rd args : $3 "
+
+else
+
+echo "please pass exact two args"
+echo " Usage : ex:  bash $0  manju achar 
+
+fi
+
+
+
+if [ $# -eq 2 ]
+then 
+echo "c l args demo"
+echo "script file name : $0"
+echo "first arg : $1"
+echo "Second Arg : $2"
+echo "3rd arg : $3"
+echo "10th arg : ${10}"
+echo "number of args : $#"
+echo "All the args : $*"
+echo "All the args : $@"
+echo "pids : $$"
+echo "previous cmd execution status : $?"
+else
+echo "you shoudl pass the 2 args.."
+echo "usage : sh $0 dbname dbbloc"
+
+fi
+
+-----------
+
+java --version
+
+if [ $? -eq 0 ]
+then 
+echo "java already installed"
+echo "installing the maven...."
+else
+echo "java is not installed.."
+echo "install the java first then install the maven"
+
+fi 
+
+==================
+
+
+
+
+3. If-elif :   -> if with multiple else condtions 
+
+If-elif script:
+
+this is used when you have multiple conditions to check , and you want the computer to choose the first condition that's true, and execute the corresponding actions
+
+
+if elif -> it has single main /outer condition with multiple options 
+
+
+#!/bin/bash
+
+read -p "Enter age: " age
+
+if [ "$age" -le 18 ];    # space needed before the closing square bracket
+then
+  echo " the ticket price is Rs. 250."
+elif [ "$age" -ge 19 ] && [ "$age" -le 60 ];  # space needed before and after square brackets
+
+then
+  echo "the ticket price is Rs. 350."
+else
+  echo "the ticket price is Rs. 200."
+fi
+
+--------------------
+
+
+
+#!/bin/bash
+read -p "Enter a age: " age
+
+if [ $age -gt 18 ]; then
+  echo "the person is adult."
+elif [ $age -eq 18 ]; then
+  echo "the person is senior citizen."
+else
+  echo "The person is not adult."
+fi
+
+
+
+
+Explanation:
+
+This script also takes a number as input.
+It checks if the number is greater than 10. If yes, it prints "The number is greater than 10."
+If the number is not greater than 10, it checks if it's equal to 10. If yes, it prints "The number is equal to 10."
+If it's neither greater than 10 nor equal to 10, it prints "The number is less than 10."
+-----------
+
+EXAMPLE :3 for if elif 
+
+
+#!/bin/bash
+
+echo "Welcome to the deployment script!"
+
+echo "Which environment are you deploying to? (dev, staging, prod)"
+read environment
+
+if [ "$environment" == "dev" ]; then
+    echo "Deploying to dev environment..."
+    
+    # Additional commands for deploying to dev
+    
+elif [ "$environment" == "staging" ]; then
+    echo "Deploying to staging environment..."
+    
+    # Additional commands for deploying to staging
+    
+elif [ "$environment" == "prod" ]; then
+    echo "Deploying to production environment..."
+    
+    # Additional commands for deploying to production
+else
+    echo "Invalid environment specified!"
+fi
+
+
+----------------------
+
+4.nested if  --> multiple if statements can be nested with in if statements .
+
+when you have conditions within conditions, like making more specific decisions based on previous decisions
+
+if it's with in budget( outer condition), if it's, if  it has good milege ( inner condition1), and if it's  safe model ( inner condition2), if both these conditions are true , you decide to buy it 
+
+
+purpose: It's used when you have conditions within conditions, like making more specific decisions based on previous decisions.
+
+Real-time example: Imagine you're buying a car. First, you check if it's within your budget (outer condition). If it is, you check if it has good mileage (inner condition 1) and if it's a safe model (inner condition 2). If both these conditions are true, you decide to buy it.
+
+EXAMPLE: 1
+
+#!/bin/bash
+
+read -p "Enter your age: " age
+
+if [ $age -ge 18 ]; then
+  echo "You are an adult."
+  if [ $age -ge 65 ]; then
+    echo "You are a senior citizen."
+  else
+    echo "You are not a senior citizen."
+  fi
+else
+  echo "You are not an adult."
+fi
+
+Explanation:
+
+This script takes your age as input.
+
+It first checks if you are 18 years or older. If yes, it prints "You are an adult."
+If you are an adult, it further checks if you are 65 years or older. If yes, it prints "You are a senior citizen."
+If you are an adult but not 65 or older, it prints "You are not a senior citizen."
+If you are not 18 or older, it prints "You are not an adult."
+These scripts showcase the use of if-else statements and nested if-else statements to make decisions and execute different actions based on conditions.
+
+--------------------------------------
+
+EXAMPLE: 2
+
+#!/bin/bash
+
+echo "Welcome to the deployment status checker!"
+
+echo "Enter the deployment status code:"
+
+read status_code
+
+if [ "$status_code" -ge 0 ] && [ "$status_code" -le 10 ]; then
+    echo "Deployment status code received: $status_code"
+    
+    if [ "$status_code" -eq 0 ]; then
+        echo "Deployment successful."
+    elif [ "$status_code" -ge 1 ] && [ "$status_code" -le 5 ]; then
+        echo "Deployment partially successful. Check logs for details."
+    else
+        echo "Deployment failed. Investigate and take necessary actions."
+    fi
+    
+else
+    echo "Invalid deployment status code received."
+fi
+
+
+explanation :
+
+Instead of prompting for a number between 1 and 10, it prompts for a deployment status code.
+If the status code is within the valid range (0-10), it proceeds to check its status.
+
+Depending on the status code:
+
+If it's 0, it indicates a successful deployment.
+If it's between 1 and 5, it indicates a partially successful deployment, requiring further investigation.
+If it's greater than 5, it indicates a failed deployment, requiring immediate action.
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+string  --> 0 or more characters enclosed in single or double quotes.
+
+name="some text"
+age='25'
+string_var="Hi there, I'm Manjunath from Bangalore"
+
+hosname=ec2-user@127.0.0.1
+
+echo ${hostname}  -> ec2-user@127.0.0.1
+echo ${#hostname}   -> 18
+
+echo ${#hostname:9}  -> 127.0.0.1
+
+
+
+echo $string_var
+echo ${string_var}
+
+if you want to see the length of string 
+
+in java, length() function, java has a great library, but shell doesn't have , so we use in this way . 
+
+
+echo ${#string_var}   --> curly braces is compulsory, when you are display with length of string.
+
+-----
+can you display the sub string , it a portion or full string, just like in maths where we have subset and superset .
+
+
+Hi there, I'm Manjunath from Bangalore  --> full string
+
+ex : if you want to display substring,and you want display Manjunath from Bangalore, and it will be ignored first 12 character 
+echo ${string_var:20}
+
+substr=${string_var:12} --> it's going to ignore first 12 character and display the substring
+
+Manjunath from Bangalore
+
+if you want display manjunath 
+
+echo ${#substr}  --> it's going to display the characters length of a string .
+
+echo ${string_var:12:9}  --> (12:9 , first number is used to ignore the number of characters in a string, second represents ,after ignoring ,how many  character that you want display .
+
+echo ${string_var: -8}  --> it's used to display the last 8 characters in particular string . 
+
+echo ${string_var:0:10}
+
+----------------------------------------------------------------------------------------------------------------------------------
+REDIRECTION :
+
+types of redirection commands :
+
+
+echo "Hello guys" > file1.txt    -> redirecting 
+
+echo "good morning" > file1.txt   ->  replacing the content in a file   
+
+echo "Hello guy" >> file2.txt    -> appending  and overriding 
+
+echo "good afternoon" >> file2.txt
+
+----
+
+1.Redirecting Output (>):
+
+Purpose: Save the standard output of a command to a file.( it's not appending )
+
+Example: Imagine you're running a script that generates logs and you want to save those logs to a file.
+
+./my_script.sh > my_logs.txt
+
+----
+
+2. Appending Output (>>): 
+
+Purpose: Append the standard output of a command to an existing file or create a new one if it doesn't exist.
+
+Example: Suppose you have a script that logs server uptime regularly, and you want to append this information to a file.
+
+./uptime_script.sh >> uptime_logs.txt
+
+----
+
+3. Redirecting Input (<):
+
+Purpose: Use a file as input for a command.
+
+Example: Let's say you have a configuration file called my_config.conf, and you want to apply it to a setup command.
+
+root@manjunathachar-k-t:~/bashdemo# cat << ouputdir1.txt , 
+John
+John
+root@manjunathachar-k-t:~/bashdemo# wc ouputdir1.txt 
+ 2  2 10 ouputdir1.txt
+root@manjunathachar-k-t:~/bashdemo# wc < ouputdir1.txt 
+ 2  2 10
+
+So, the file "ouputdir1.txt" contains 2 lines, 2 words, and 10 characters.
+
+---
+
+root@manjunathachar-k-t:~/bashdemo# cat ouputdir1.txt 
+don
+
+root@manjunathachar-k-t:~/bashdemo# cat < ouputdir1.txt 
+don
+
+
+
+----
+
+4 .Piping Output (|):
+
+Purpose: Send the output of one command as input to another command.
+
+Example: You want to search for a specific error message in log files.
+
+journalctl | tail -n 3
+
+
+----
+
+4.1 .  && -> 
+
+
+
+5. Combining Output and Errors (2>)   OR     &> or 2>&1 (Redirect both stdout and stderr)
+
+deploy_script.sh 2> deployment_errors.log    -->  Redirect standard error (stderr) output to a file.
+
+Example: During a deployment, you want to capture any error messages in a log file for later analysis.
+
+
+deploy_script.sh &>> deployment_errors.log    --> Redirect both stdout and stderr to a file  
+
+deploy_script.sh 2>&1 deployment_errors.log   --> Redirect both stdout and stderr to a file 
+
+
+----
+
+FUNCTIONS:
+
+
+functions ( dry , dont repeat yourself , that's variable concept)
+
+USING VARIABLES 
+
+#!/bin/bash
+
+USERID=$(id -u)
+
+#check whether the user	is root user or not 
+
+if [ $USERID -ne 0 ] 
+then 
+echo "please run this script with root user access"
+exit 1
+fi
+
+echo "installling the git"
+
+apt-get install git -y
+
+if [ $? -ne 0 ]
+then
+echo "git installation is failed"
+exit 2
+else
+echo "git installation is success"	
+
+echo "installing the vim"
+
+apt-get install vim -y
+
+if [ $? -ne 0 ]
+then
+echo "Vim installation is failed"
+exit 2
+else
+echo "Vim installation is success" 
+
+echo "installing the python3"
+
+apt-get install python3 -y
+
+if [ $? -ne 0 ]
+then
+echo "python3 installation is failed"
+exit 2
+else
+echo "python3 installation is success" 
+fi
+
+
+note:You have repeated the same code for installing Git and Vim above. Avoid redundancy by adhering to the DRY (Don't Repeat Yourself) concept through the use of variables. To mitigate code duplication and reduce the number of lines, consider implementing function 
+
+above you have repeated twice the same code for installing git and vim , dont repeat yourself a DRY concept in variable  so we try to mitigate the lines of code and repeating codes  for that we use functions 
+
+functions does a unit of work , you can create a function and use it wherever it's required . a chance in single place and it reflect everywhere 
+
+variables is also do the same thing, which make changes in single line, but functions can do the whole things in a single unit 
+
+
+
+syntax for function 
+
+IN JAVA :where we use "import" to reuse the function from one class to another class .
+
+c++ --->   " #include "
+
+in shell script
+
+source ./shellscript.sh to use same function in multiple scripts 
+
+
+$0 
+
+..
+.filename
+
+source 
+
+source 
+
+
+
+
+FUNCTION_NAME () {
+
+
+}
+
+FUNCTION_NAME   # this is how u call function , generally we create the functions on the top in the script 
+
+passing arguments to functions
+
+
+
+#!/bin/bash
+
+USERID=$(id -u)
+
+#check whether the user	is root user or not 
+
+if [ $USERID -ne 0 ] 
+then 
+echo "please run this script with root user access"
+exit 1
+fi
+
+
+
+#this is generic function so we need to pass the agruments  
+
+VALIDATE(){
+if [ $1 -ne 0 ] 
+then
+echo "$2.... failed"
+exit 2
+else
+echo "$2.....success"	
+fi
+}
+
+apt-get install git -y
+
+VALIDATE $? "Git installation"
+
+apt-get install vim -y
+VALIDATE $? "VIm installation"
+
+apt-get install python3 -y
+VALIDATE $? "Python3 installation"
+
+--------------
+
+Logs --> to check the execution of a script or application or logs of a project, that's y govt recommand to all fin institutions to preserve the log of atleast 2 years ) 
+
+time format for logs to save with the time  ( date +"%F-%H-%M-%S" or TZ="Asia/Kolkata" date +"%F-%H-%M-%S" )
+
+--- 
+
+#!/bin/bash
+
+USERID=$(id -u)
+DATE=$(date +"%F-%H-%M-%S")
+LOG_FILE=$DATE
+
+#check whether the user	is root user or not 
+
+if [ $USERID -ne 0 ] 
+then 
+echo "please run this script with root user access"
+exit 1
+fi
+
+#this is generic function so we need to pass the arguments
+
+VALIDATE(){
+if [ $1 -ne 0 ] 
+then
+echo "$2.... failed" &>>$LOG_FILE
+exit 2
+else
+echo "$2.....success" &>>$LOG_FILE	
+fi
+}
+
+apt-get install git -y &>>$LOG_FILE
+VALIDATE $? "Git installation"
+
+apt-get install vim -y &>>$LOG_FILE
+VALIDATE $? "VIm installation"   
+---------------------------------------------------------------------------------------
+create a Bash script with functions and reuse those functions in different Bash scripts
+
+Create a Functions Script
+
+vim common-functions.sh
+
+#!/bin/bash
+
+# Define the VALIDATE function
+VALIDATE() {
+  if [ $1 -ne 0 ]; then
+    echo "$2... failed"
+    exit 2
+  else
+    echo "$2... success"
+  fi
+}
+
+Save this file in a directory where your other scripts can access it.
+
+
+--------------------------------------------------------------
+Make the Functions Script Executable
+
+chmod +x common-functions.sh
+------------------------------------------------------------------
+
+ Create a New Bash Script
+
+#!/bin/bash
+
+USERID=$(id -u)
+
+# Check whether the user is the root user or not
+if [ $USERID -ne 0 ]; then
+  echo "Please run this script with root user access"
+  exit 1
+fi
+
+# Include the common functions
+source ./common-functions.sh
+
+# Install Git and validate
+apt-get install git -y
+VALIDATE $? "Git installation"
+
+# Install Vim and validate
+apt-get install vim -y
+VALIDATE $? "Vim installation"
+
+# Install Python3 and validate
+apt-get install python3 -y
+VALIDATE $? "Python3 installation"
+
+---------------------------------------------------
+Make the New Script Executable
+chmod +x new-script.sh
+-----------------------------------------------------
+Run the New Script
+new-script.sh
+
+============================================================================================================================
+loops:
+=======
+-----------------
+The Ice Cream Line: A Tale of Two Loops
+
+Imagine you're at an ice cream parlor, and you want to eat ice cream. You have a unique challenge in front of you: you want to try different flavors until you find your absolute favorite.
+
+The "For Loop" Approach:
+
+You decide to use the "For Loop" strategy:
+
+You prepare a list of all the ice cream flavors available, from 1 to 10.
+You grab a spoon and start tasting each flavor one by one.
+After tasting a flavor, you make a note if you like it or not.
+You continue tasting all the flavors until you've tried all 10.
+At the end, you look at your notes and declare the flavor you liked the most as your favorite.
+This is like a for loop because you knew exactly how many flavors you wanted to try (10), and you went through the list systematically until you reached your decision.
+
+The "While Loop" Approach:
+
+Now, imagine you're more spontaneous, so you decide to use the "While Loop" strategy:
+
+You pick up a spoon and start tasting the first flavor.
+
+You ask yourself, "Do I love this flavor?" If the answer is yes, you keep eating.
+
+If the answer is no, you put that flavor aside and move on to the next.
+
+You keep going, one flavor at a time, until you eventually taste one that makes you say, "Wow, this is the best!"
+
+This is like a while loop because you're tasting flavors as long as you don't find your favorite. You don't know in advance how many scoops you'll need to taste, so you keep going until you're satisfied.
+
+In the end, both loops help you find your favorite ice cream flavor, but they do it in different ways. The for loop has a set number of iterations, and you taste all flavors systematically. The while loop, on the other hand, keeps going until you find the flavor you love, no matter how many scoops it takes.
+
+-----------------
+
+loops means
+
+a loop is a repetitive action or process that continues until a certain condition is met. It's like doing something over and over again until you achieve a specific goal or until you can't continue anymore
+
+Imagine making sandwiches(condition):
+
+You have a stack of bread slices, and you want to make peanut butter and jelly sandwiches. You follow these steps:
+
+Take a slice of bread.
+Spread peanut butter on it.
+Take another slice of bread.
+Spread jelly on it.
+Put the two slices together to make a sandwich.
+Now, you want to make multiple sandwiches, say five of them. You could use a "sandwich-making loop" in real life:
+
+You start with your stack of bread, peanut butter, and jelly.
+You begin making sandwiches, repeating the process until you've made five.
+After each sandwich, you check: "Have I made five sandwiches yet?" If not, you continue making more sandwiches. If you've made five, you stop.
+
+---------------------
+There are typically two main types of loops in programming:
+
+For Loop: A for loop is used when you know in advance how many times you want to repeat a set of instructions. It typically consists of three parts: initialization, a condition, and an increment or decrement statement.
+
+
+While Loop: A while loop is controlled by a condition. It continues executing as long as the condition specified within the loop's control structure remains true. The condition can be more dynamic and can change during the loop's execution.
+
+
+
+------------------------
+
+for loop: if else condition , if it's not satisfied first then will move to next condition.
+
+in loop : my requirement , i want to check n numbers of conditions ,as soon as the condition is satisfied then execute some conditions 
+
+in c/cpp/java
+
+the syntax for for loop 
+for (intialzation;condition;increment operator/decrement operator)
+
+{
+;;;;;;;; 
+;;;;;;;;
+}
+
+in shell script: instead using "{ }" here we use "do and done"
+
+for ((intialzation;condition;increment operator or decrement operator))
+
+do
+;;;;;;;;
+;;;;;;;;
+done
+
+ex: write a script using for loop, display the number from 1 to 5
+
+echo "for loop demo starts.."
+
+for (( a=1;a<=5;a++ ))   # a++ means incremental values
+do
+echo $a
+done
+echo "for loop demo over"
+
+
+output:
+for loop demo starts
+1       a=1. 1<=5,1++ ,$a =1 
+2       a=2. 2<=5,2++ ,$a =2
+3       a=3. 3<=5,3++ ,$a =3
+4       a=4. 4<=5,4++ ,$a =4
+5       a=5. 5<=5,5++ ,$a =5
+        a=6. 6<=5,5++ ,$a =5 you wont get it , a is not equal to 5 , it will come out of the loop and will exit from this script .
+
+
+
+
+
+touch file{1..15}
+----------------------
+#!/bin/bash
+
+# List of server hostnames
+servers=("server1" "server2" "server3" "server4" "server5")
+
+# Loop through the list of servers and update software
+for server in "${servers[@]}"
+do
+  echo "Updating software on $server..."
+  
+  # Simulate a software update command (in reality, you'd use a real update command)
+  ssh $server "sudo apt-get update && sudo apt-get upgrade -y"
+  
+  echo "Software update on $server complete."
+done
+
+echo "All servers have been updated."
+
+=============
+
+#!/bin/bash
+
+# Bash script to find the largest number among 10 numbers
+
+# Initialize a variable to store the largest number
+largest=-9999999999
+
+# Loop to prompt the user to enter 10 numbers
+for ((i=1; i<=10; i++)); do
+    echo -n "Enter number $i: "
+    read num
+
+    # Compare the entered number with the current largest
+    if ((num > largest)); then
+        largest=$num
+    fi
+done
+
+# Print the result
+echo "The largest number among the entered numbers is: $largest"
+
+=======
+-------------------------------------------------------------------------------------------------------------------------
+vim whileloop.sh
+
+
+for (( a=1;a==10;a++ )) 
+do
+   echo " the value of $a "
+done
+---
+while loop
+
+intialization
+
+while (condition)
+do
+echo " the value of the variable "
+done
+increment or dec oprerator 
+
+a=1
+
+while ( a<=5 )
+
+do
+echo " numbers from 1 to 5: $a "
+done
+a++
+
+
+---
+
+how to create 100 users on linux ?
+
+#!/bin/bash
+
+# Loop to create users
+for ((i=1; i<=100; i++)); do
+    username="user$i"  # Define username
+    useradd -m "$username"  # Create user with home directory
+    echo "User $username created"
+done
+
+&
+
+#!/bin/bash
+
+# Loop to create users
+for ((i=1; i<=100; i++)); do
+    read -p "Enter username for user $i: " username  # Prompt user for username
+    useradd -m "$username"  # Create user with home directory
+    echo "User $username created"
+done
+
+
+and 
+
+#!/bin/bash
+
+# Loop to create users
+for ((i=1; i<=3; i++)); do
+    read -p "Enter your name for user $i: " username
+    sudo adduser --disabled-password --gecos "" "$username"
+    echo "User $username created"
+    
+    # Set password for the user
+    read -sp "Enter password for $username: " password
+    echo "$username:$password" | sudo chpasswd
+    echo "Password set for $username"
+done
+
+
+--disabled-password: This option disables password authentication for the newly created user. It means that the user won't be able to log in with a password, effectively preventing them from accessing the system until a password is set.
+
+--gecos "": This option sets the GECOS field of the user's entry in the /etc/passwd file to an "empty string".
+
+ Setting it to an "empty string" means that no additional information is provided.
+
+
+
+-----------
+while loop
+-----------
+
+c/cpp/java
+
+initialization 
+
+while ( condition) 
+{
+....
+....
+}
+inc/dec operator 
+
+in java we have do while and all , but shell we dont have them in shell, most of time we used for loop 
+
+in shell script >> while loop
+
+
+initialization
+while [ condition ]
+do
+  echo $i
+  ((i++))
+done
+
+---------------------------------
+
+i=1
+
+while [ $i -le 5 ]
+do
+  echo $i
+  ((i++))
+done
+
+echo "while loop demo over..."
+
+--------------------------------
+
+echo " while loop demo starts..."
+
+i=1
+
+while [ $i-le 5 ]
+do
+echo $i
+i=`expr $1 + 1`
+done
+echo "while loop demo over..."
+
+---------------------------------
+
+output:
+while loop demo starts
+1     i=`expr $1 + 1`   -> i=1. 1<=5,1++ ,$a =1
+2     i=`expr $1 + 1`   -> i=2. 2<=5,1++ ,$a =1+1
+3     i=`expr $1 + 1`   -> i=3. 3<=5,1++ ,$a =2+1
+4     i=`expr $1 + 1`   -> i=4. 4<=5,1++ ,$a =3+1
+5     i=`expr $1 + 1`   -> i=5. 5<=5,1++ ,$a =4+1
+-------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+switch case : it's a alternative for nested if condition
+
+a switch case allows you to make decisions in your shell script based on different choices, just like you make food choices from a menu at a restaurant.
+
+
+
+sh sonar.sh start   it's a command line argument
+
+
+switch cases 
+
+argument must be match with inside value 
+
+ex:
+
+sonar.sh start
+
+echo "Switch case demo starts..."
+
+case $1 in 
+
+start)
+
+echo "SonarQube Server is starting..."
+echo "SonarQube Server is started..."
+;;
+stop)
+echo "SonarQube Server is stopping..."
+echo "SonarQube Server is stopped..."
+;;
+restart)
+echo "SonarQube Server is restarting..."
+echo "SonarQube Server is restarted..."
+;;
+*) 
+echo "Please pass the correct argument..."
+echo "Usage: sh $0 start|stop|restart"
+esac
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+root@manjunathachar-k-t:~/bashdemo# cat case1.sh 
+read -p "Enter Grade: " grade
+
+case $grade in 
+	
+  A)
+    echo "Your marks are in the range of 90-100"
+    ;;
+  B)
+    echo "Your marks are in the range of 80-89"
+    ;;
+  C)
+    echo "Your marks are in the range of 70-79"
+    ;;
+  D)
+    echo "Your marks are in the range of 60-69"
+    ;;
+  *)
+    echo "Your marks are below 60 (Fail)"
+    ;;
+esac
+
+
+---
+Enter Grade: A
+Your marks are in the range of 90-100
+
+==================================================================================================================================
+
+ADDITIONAL STUFFS ( ASSIGNMENTS )
+
+--------------
+#!/bin/bash
+#
+##################################################
+#
+# Author Name : 
+#
+# Date
+#
+# Description : this script to install required devops tools,like git,vim,python.
+#
+# #################################################
+USERID=$(id -u)
+#check whether the user	is root user or not 
+
+if [ $USERID -ne 0 ] 
+then 
+echo "please run this script with root user access"
+exit 1
+fi
+
+echo "installling the git"
+
+apt-get install git -y
+
+echo $?
+if [ $? -ne 0 ]
+then
+echo "git installation is failed"
+exit 2
+else
+echo "git installation is success"	
+
+echo "installing the vim"
+
+apt-get install vim -y
+
+echo $?
+if [ $? -ne 0 ]
+then
+echo "Vim installation is failed"
+exit 2
+else
+echo "Vim installation is success" 
+
+fi
+
+
+===========
+vim devopstools.sh
+
+USERID=$(id -u)
+
+#check whether the user is root user or not 
+
+if [ $USERID -ne 0 ]
+then
+echo "please run this script with root user access"
+exit 1
+fi
+
+#this is generic function so we need to pass the agruments  
+
+VALIDATE(){
+if [ $1 -ne 0 ]
+then
+echo "$2.... failed"
+exit 2
+else
+echo "$2.....success"   
+fi
+}
+
+apt-get install git -y
+
+VALIDATE $? "Git installation"
+
+apt-get install vim -y
+VALIDATE $? "VIm installation"
+
+apt-get install python3 -y
+VALIDATE $? "Python3 installation"
+
+-------------------------
 
   
