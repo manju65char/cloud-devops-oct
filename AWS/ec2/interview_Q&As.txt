@@ -35,13 +35,6 @@ Answer:
 
 The root volume is the primary storage device where the operating system is installed. It is often an EBS (Elastic Block Store) volume, and its size is determined by the AMI used.
 
- 
-
-For Free, Demo classes Call: 020-71173070
-
-Registration Link: AWS Classes in Pune!
-
- 
 
 How are security groups different from Network ACLs in EC2?
 Answer: 
@@ -116,11 +109,7 @@ Instance metadata is data about an instance that can be used to configure or man
 
  
 
-For Free, Demo classes Call: 020-71173070
-
-Registration Link: AWS Course in Pune!
-
-What is the use case for Amazon EC2 Spot Instances?
+what is the use case for Amazon EC2 Spot Instances?
 Answer: 
 
 Spot Instances allow you to use spare EC2 capacity at a lower cost, making them suitable for workloads that are fault-tolerant and can handle interruptions.
@@ -146,13 +135,6 @@ Answer:
 High Availability ensures that your application is available and operational without interruption. This can be achieved through mechanisms like Auto Scaling, Multi-AZ deployments, and Load Balancers.
 
  
-
-For Free, Demo classes Call: 020-71173070
-
-Registration Link: AWS Training in Pune!
-
- 
-
 What is a Multi-AZ deployment, and how does it enhance fault tolerance?
 Answer: 
 
