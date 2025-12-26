@@ -1,1 +1,172 @@
+Top 30 Interview Questions on AWS EC2 Service :
 
+Prepare for success in your AWS EC2 interviews with our curated list of the Top 30 Interview Questions on AWS EC2 Service 2024.
+
+What is Amazon EC2?
+Answer: 
+
+Amazon EC2 (Elastic Compute Cloud) is a web service that provides resizable computing capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
+
+Explain the concept of an EC2 instance.
+Answer: 
+
+An EC2 instance is a virtual server in the AWS Cloud, running an operating system of your choice. It can be launched or terminated as needed, and you only pay for the computing capacity you consume.
+
+What is an Amazon Machine Image (AMI)?
+Answer: 
+
+An AMI is a pre-configured virtual machine image used to create EC2 instances. It includes the necessary information to launch an instance, such as the operating system and application software.
+
+How does EC2 pricing work?
+Answer: 
+
+EC2 pricing is based on the instance type, region, and usage (On-Demand, Reserved Instances, or Spot Instances). Users pay for the compute capacity they consume.
+
+Explain the difference between On-Demand Instances and Reserved Instances.
+Answer: On-demand instances are pay-as-you-go, while Reserved Instances are pre-paid for a one- or three-year term, offering cost savings compared to On-Demand pricing.
+
+What are the different EC2 instance types and their use cases?
+Answer: 
+
+Instances are categorized into families like General Purpose, Compute Optimized, Memory Optimized, Storage Optimized, and Accelerated Computing. Use cases depend on the specific requirements of your application.
+
+What is the significance of the instance’s root volume?
+Answer: 
+
+The root volume is the primary storage device where the operating system is installed. It is often an EBS (Elastic Block Store) volume, and its size is determined by the AMI used.
+
+ 
+
+For Free, Demo classes Call: 020-71173070
+
+Registration Link: AWS Classes in Pune!
+
+ 
+
+How are security groups different from Network ACLs in EC2?
+Answer: 
+
+Security groups are stateful and operate at the instance level, while Network ACLs are stateless and operate at the subnet level.
+
+Explain Elastic IP addresses in EC2.
+Answer: 
+
+An Elastic IP address is a static IPv4 address designed for dynamic cloud computing. It allows users to associate a persistent IP address with their instances.
+
+What is the purpose of an Amazon Virtual Private Cloud (VPC)?
+Answer: 
+
+A VPC allows users to launch Amazon Web Services resources into a virtual network that they’ve defined. It provides control over the virtual networking environment, including IP address range, subnets, and route tables.
+
+How can you launch an EC2 instance?
+Answer: 
+
+Instances can be launched through the AWS Management Console, AWS CLI, AWS SDKs, and third-party tools.
+
+What is the significance of user data in EC2 instances?
+Answer: 
+
+User data allows you to run scripts or commands when an EC2 instance launches, facilitating instance customization.
+
+Explain the process of connecting to an EC2 instance.
+Answer: 
+
+You can connect to an EC2 instance using SSH (Linux) or RDP (Windows) based on the operating system. Key pairs or passwords are used for authentication.
+
+What is Amazon EBS, and how is it used with EC2 instances?
+Answer: 
+
+Amazon Elastic Block Store (EBS) provides block-level storage volumes for use with EC2 instances. It is often used for the root volume, data storage, and can be detached and attached to different instances.
+
+How do EBS snapshots work?
+Answer: 
+
+EBS snapshots are point-in-time copies of EBS volumes. They are incremental, capturing only the data that has changed since the last snapshot.
+
+Can you change the instance type of a running EC2 instance?
+Answer: 
+
+No, you cannot change the instance type of a running instance. However, you can stop the instance, change its type, and then restart it.
+
+
+What is Auto Scaling, and how does it work in EC2?
+Answer: 
+
+Auto Scaling allows you to automatically adjust the number of EC2 instances in a fleet to maintain application availability and meet performance requirements.
+
+Explain the difference between desired capacity, minimum capacity, and maximum capacity in Auto Scaling.
+Answer: 
+
+Desired capacity is the number of instances you want running, minimum capacity is the minimum number to maintain, and maximum capacity is the maximum number to scale up to.
+
+What is Amazon CloudWatch, and how can it be used with EC2 instances?
+Answer: 
+
+Amazon CloudWatch is a monitoring service that provides data and actionable insights for AWS resources. It can be used to monitor EC2 instances and trigger alarms based on predefined thresholds.
+
+How can you troubleshoot connectivity issues with an EC2 instance?
+Answer: 
+
+Troubleshooting steps may include checking security groups, Network ACLs, route tables, and verifying the status of the instance, among other things.
+
+What is EC2 instance metadata?
+Answer: 
+
+Instance metadata is data about an instance that can be used to configure or manage the running instance. It is accessible from within the instance.
+
+ 
+
+For Free, Demo classes Call: 020-71173070
+
+Registration Link: AWS Course in Pune!
+
+What is the use case for Amazon EC2 Spot Instances?
+Answer: 
+
+Spot Instances allow you to use spare EC2 capacity at a lower cost, making them suitable for workloads that are fault-tolerant and can handle interruptions.
+
+Explain the concept of an EC2 Placement Group.
+Answer: 
+
+A Placement Group is a logical grouping of instances within a single Availability Zone. It can be used to influence the placement of instances to meet specific needs, such as low-latency networking.
+
+What are the best practices for securing EC2 instances?
+Answer: 
+
+Best practices include using IAM roles, securing SSH/RDP access, regular patching, using security groups, and encrypting data at rest and in transit.
+
+How can you enhance the security of data stored on EBS volumes?
+Answer: 
+
+Data on EBS volumes can be encrypted using AWS Key Management Service (KMS) to enhance security.
+
+Explain the concept of High Availability in the context of EC2 instances.
+Answer: 
+
+High Availability ensures that your application is available and operational without interruption. This can be achieved through mechanisms like Auto Scaling, Multi-AZ deployments, and Load Balancers.
+
+ 
+
+For Free, Demo classes Call: 020-71173070
+
+Registration Link: AWS Training in Pune!
+
+ 
+
+What is a Multi-AZ deployment, and how does it enhance fault tolerance?
+Answer: 
+
+Multi-AZ (Availability Zone) deployments involve replicating instances across multiple availability zones to ensure high availability and fault tolerance in case of a failure.
+
+How do you enable Enhanced Networking for an EC2 instance?
+Answer: Enhanced Networking can be enabled during instance launch, and it requires a supported instance type within a Virtual Private Cloud (VPC).
+
+What is an EC2 Dedicated Host, and when might you use it?
+Answer: 
+
+An EC2 Dedicated Host is a physical server dedicated for your use. It might be used in scenarios where you have specific licensing requirements or regulatory constraints.
+
+How can you troubleshoot DNS resolution issues in EC2 instances?
+Answer: 
+
+Troubleshooting steps may include checking the DNS settings in the instance, security group rules, and VPC route tables.
