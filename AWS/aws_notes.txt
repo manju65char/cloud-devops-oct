@@ -1,1 +1,1992 @@
 
+
+
+what's cloud ? 
+
+
+cloud computing ? 
+
+SLA : 99.99999999999
+
+data and applications being stored and run on the cloud rather than being stored on local machine or on promises 
+
+
+types of cloud computing or cloud technologies : 
+
+Salesforce
+
+AWS --> Amazon web services --> AMAZON 
+
+AZURE --> MICROSOFT
+
+GCP --> GOOGLE
+IBM Cloud -> 
+
+
+Pay as you go --> 
+==============================================================
+
+
+aws account : aws account id : 
+
+
+root user :  -> admin access  -> cto ceo bod 
+email and password 
+
+
+aws admin --> Manjunath --> aws admin -->   users and aws services 
+
+
+IAM user : 
+
+aws account id : 
+iam user name : 
+iam password :
+
+===========
+
+budget setup : 
+
+$3 per month -->  750 hrs --> vms 
+
+
+
+=========================
+
+CLOUD SERVICE MODELS
+
+IAAS
+PAAS
+SAAS 
+
+cloud computing deployment models 
+
+
+public
+private 
+hybrid cloud  aws + on premises 
+
+
+aws -->  default 
+VPC --> own network and servers setup and its configuration  ,  Bastion host  or jump server 
+
+              ssh         NAT GATEWAY 
+bastionhost ------> app server 
+
+web server  --> httpd or nginx --> html,css,js
+app server   
+db server 
+
+====================
+
+
+AWS global infrastructure : 
+
+Region
+AZs or availability zones
+Edge locations 
+
+
+Region -->  a region is a geographical location which host 3 or more AZs, each region has min of 3 AZs 
+
+
+AZ : 
+
+collection of data centers with in a region 
+
+
+
+
+us-east1    -> N.virginia 
+
+us-east1a
+us-east1b
+us-east1c
+us-east1d
+us-east1e
+us-east1f
+
+
+us-east-1a       us-east-1b   us-east-1c
+
+
+
+ec2->app
+
+
+us-east1           us-west-2
+
+ec2->app
+
+
+Mumbai 
+
+ap-south-1
+
+
+ap-south-1a
+ap-south-1b
+ap-south-1c
+ap-south-1d
+ap-south-1e
+ap-south-1f
+
+Hyderbad 
+ap-hyderbad-1a
+ap-hyderbad-1b
+ap-hyderbad-1c
+
+
+
+
+3. Edgelocation  or cach location or copy replication or CDN --> cloudfront   --> azure frontdoor or cdn profiles 
+
+
+amazon.com
+
+chennai -------> edge location -----------------Mumbai/HYD -------------------------------------> origin server(ec2,serverless service,s3,ecs,eks) amazon.com (usa  us-east-1 , us-east-1a)
+
+
+
+
+charcoal --> shop1 ---------------------------------------> wholesale shop -------------------------------> manufactory unit 
+
+==================================================
+
+
+aws free tier :  for 12 months --> pay as you go --> you are going to pay the charges/bills based on usage , like electricity or post paid 
+
+ec2 --> 750 hours per month  --> t2.micro --> instance type 
+
+10 instances 
+
+10*24 = 3 27  
+
+
+24*30 == 
+
+S3 BUCKET
+RDS --> 
+efs
+storage 
+
+
+
+list the services which comes under free tier eligible customers
+
+
+------------
+
+https://github.com/iskanthavijay-blip
+
+
+ec2 instance : 
+
+
+
+
+
+
+
+Linux+bashscripting  ---> aws+networking  ----> devops 
+
+mac --> 
+windows --> enterprise edition and licensed 
+
+ctrl+c --> 
+
+cc --> 
+
+
+Linus Torvalds 
+
+unix 
+
+
+
+Linux is an opensource os, it's for free , it has both text and graphical based os 
+
+
+
+merits: 
+
+Opensource : 
+
+source code is freely available , can be modified or distributed 
+
+
+security : 
+
+robust security features ---> user/files permission and multi user environment 
+
+
+
+db_Config.txt  --> John --> read or write or executable(shell script)
+
+
+John
+
+
+
+WSL -> ON WINDOWS --> Windows subsystem Linux --> hypervisor 
+
+
+
+
+stability or reliability : 
+
+
+1.2 --> 1.2  
+
+2025 --> 1.2              --> 30 
+
+
+performance 
+
+
+Pkg management (software package mgt)
+
+
+WhatsApp --> 
+
+=========
+
+demerits : 
+
+software compatibility 
+
+driver support : 
+
+
+
+user interface or desktop env : 
+
+
+folder -> directory 
+
+
+
+limited support for certain softwares : 
+
+
+===================
+
+
+Linux distributions or Linux flavours  : 
+
+2 types of Linux distribution families : 
+
+1. Debian family 
+2. Fedora family 
+
+1. Debian family     -> apt or apt-get   --> advanced pkg mgt tool 
+
+Debian 
+kali
+ubuntu 
+
+
+2.  Fedora family   -> yum 
+
+fedora
+redhat Linux
+centos 
+alma Linux
+openSUSE 
+amazonlinux 2 amazonlinux 2023 
+
+
+
+apt 
+dnf or yum 
+zypper -> openSUSE
+snap  -> Debian and fedora 
+RPM -> redhat pkg manager --> fedora,centos, redhat Linux
+DPKG > Debian family 
+
+
+============================
+
+Linux task : 
+
+1 : the Linux booting process(purpose of each steps in the process) and Linux directory structure / , purpose of each directories(devops tools,jenkins,sonarqube,nexus,ansible or any other tools,java,python,node)
+
+=======================================================
+
+Linux 
+
+sudo apt install <tool name> -y 
+
+sudo apt install/update/upgrade/uninstall git -y 
+
+sudo apt install/update/upgrade/uninstall  -y  git     
+
+
+-y -> auto proceeding 
+
+
+
+
+sudo --> super do user --> admin access or  log in as root user(admin user)
+
+normal user : you must use the sudo as prefix  in order to perform any admin activities : install,uninstall,app related configuration 
+
+
+root user : he doesn't required any sudo keyword or even if use, it would be optional 
+
+mac ; 
+
+brew 
+
+============================================
+
+
+ec2 instance : 
+
+vm,local machine,host machine,server,machine,instance, physical server 
+
+ 
+
+specifications  --> to buy a new laptop 
+
+model
+processor 
+memory ddr4
+storage : ssd (which type) or hdd (which hdd)
+display : size and type 
+graphic card: 
+
+Command line interface or terminal : 
+
+
+
+key pair : it's a combination of public and private key(it will be downloaded in your physical or local machine )
+
+public(it will be downloaded in ec2 instance and internally connected to your local machine ) and private key(it will be downloaded in your physical or local machine )
+
+
+
+.pem
+For use with OpenSSH
+.ppk
+For use with PuTTY
+
+
+======================
+
+linux to linux ---> sshing or connecting --> ssh into target server   -> you dont need ssh client  
+
+ssh (protocal : 22)
+
+
+ssh clints  --> these are intermediatory tools that facilates us to connect to linux machine from windows 
+
+
+putty 
+super putty 
+
+mobaxterm  --> https://mobaxterm.mobatek.net/
+
+==========================
+
+
+linux  - developed by Linus Torvalds
+
+unix  -> 
+
+linux is an opensource operating system. it has both text and graphical based operating system.
+
+
+
+
+usage of linux
+
+Merits of Linux:
+
+Open Source:
+
+Merits: Linux is open-source, meaning its source code is freely available and can be modified and distributed. This fosters collaboration and community-driven development.
+
+Benefits: Users can customize the operating system to suit their needs, and security vulnerabilities can be addressed more rapidly.
+
+
+Security:
+
+Merits: Linux is known for its robust security features. Its multi-user environment and permissions system help protect against malware and unauthorized access.
+
+Benefits: Linux is less susceptible to viruses and malware compared to some other operating systems, making it a preferred choice for servers and critical infrastructure.
+
+Stability and Reliability:
+
+Merits: Linux is known for its stability and reliability. It can run for extended periods without needing to be rebooted, making it suitable for servers and critical systems.
+
+Benefits: System crashes are less frequent, and the system tends to handle heavy workloads efficiently.
+
+
+Performance:
+
+Merits: Linux generally performs well, even on older hardware. It can be configured for specific use cases, making it efficient for various applications.
+
+Benefits: Linux is often used in resource-constrained environments and can provide good performance for tasks ranging from desktop use to server applications.
+
+
+Package Management:
+
+Merits: Linux distributions use package managers that simplify software installation, updates, and removal. This centralized approach ensures software is installed with dependencies, reducing compatibility issues.
+
+Benefits: It's easier to manage software and keep the system up-to-date.
+
+Demerits of Linux:
+------------------
+
+Software Compatibility:
+
+Demerits: Some proprietary software and applications are not available for Linux. Users may face challenges finding alternatives or using compatibility layers like Wine.
+
+Drawbacks: Gaming and certain professional applications may have limited support on Linux.
+
+Driver Support:
+
+Demerits: While Linux supports a wide range of hardware, some manufacturers may not provide Linux drivers. This can lead to compatibility issues for specific devices.
+
+Drawbacks: Users may need to rely on community-developed or generic drivers, which may not offer the same level of performance or features as official drivers.
+
+User Interface and Desktop Environments:
+
+Demerits: The variety of desktop environments and user interfaces in Linux can be overwhelming for new users. It may take time to find one that suits individual preferences.
+
+Drawbacks: The user experience may not be as consistent as in some other operating systems.
+
+Learning Curve:
+
+Demerits: For users accustomed to other operating systems, the Linux command line interface can be intimidating. Learning the commands and system configurations may take time.
+
+Drawbacks: The learning curve can be a barrier for some users, especially those who are not familiar with the command-line interface.
+
+Limited Support for Certain Software:
+
+Demerits: Some industry-specific or niche software may not have Linux versions or equivalents. This can be a significant drawback for professionals in certain fields.
+
+Drawbacks: Users may need to resort to virtualization or dual-boot setups to run essential software that is not natively supported on Linux.
+
+===============================
+
+
+linux distributions :
+
+2 linux distribution families:
+
+1.debian family
+
+2.fedora family
+
+1.debian distribution family ( apt or apt get  )
+debian
+ubuntu 
+
+2.fedora distribution family ( yum or dnf )
+
+fedora
+kali  ->
+open suse
+Redhat linux 
+cent os
+alma linux
+
+amazon linux 2023
+amazon linux 2 
+
+alpine -> apk 
+
+package mgt tool 
+
+update, upgrade, install, unintall, 
+
+
+linux distributions 
+
+
+2 types of linux distribution families
+
+1.debian  linux distribution families  -> apt  or apt-get 
+2.fedora  linux distribution families  -> yum 
+
+1. debian linux families  -> apt install git -y
+debian  
+ubuntu 
+
+2.fedora family
+fedora
+centos
+opensuse
+amazon linux 2    -> yum install git -y  
+kali linux
+alma linux
+
+alpine linux ->  independent linux distribution , apk -> apk install git -y 
+busy box -> light weight linux distro for linux utilities .
+scratch 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+linux os
+
+os -> combination  of shell and kernal 
+
+it's an interface user and system
+
+
+kernel it's software , it's heart  of operating software , core component of os 
+
+linux os depends on kernel 
+
+system depends os 
+
+
+
+html
+source code  web application   webserver
+
+home.html 
+<html>
+<body>
+<h1>manjuTechPvtLtd</h1>
+<p> this is software solutions </p>
+</body>
+</html> 
+
+
+sample.py 
+
+a="welocome  to linux"
+print(a)
+
+
+computer  , 
+
+.java
+.py 
+
+execution 
+
+jvm
+pvm 
+jre 
+
+a=10
+print(a,type(a))
+
+source code  compiling             compliler                                                    pvm                            
+    py                             .pyc,javac , complied code or byte code           processor/ram/rom
+                                
+
+
+
+
+
+
+
+
+
+programming execution process
+
+ 
+                 compiling phase                                executing phase                 pvm /jvm  /processor/cpu      
+sample.py                             compiler    
+                                      compiled code                                                   +v 0,1 
+                                      byte code (pyc,javac)                                            o  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ls  -> listing the files and folders
+
+
+ll   -> longlist files and folders
+
+
+
+
+
+
+source code : 
+
+
+
+
+
+Linux Shell:
+- default shell in Linux is BASH.
+
+
+ in os there is a special program is called "shell".
+- shell is interpretor
+- shell takes the commands from user and execute it.
+- and it will gives the result as user understandable.
+
+linux kernal  
+
+
+linux distributions
+
+
+
+
+amazon linux 2 -> rpm , snap , yum ,dnf
+
+linux package mgrs with different linux flavours  
+
+APT (Advanced Package Tool) - debian, ubuntu
+DNF (Dandified YUM) or yum (older version)   - fedora, redhat,centos,
+Zypper - pkg mgr to openSUSE   -> sudo zypper install git -y
+Snap -> pkg mgr to debian and fedora as well 
+RPM (Red Hat Package Manager) -> fedora,centos and so an
+DPKG (Debian Package) -> debian and ubuntu
+
+
+
+RPM VS YUM 
+
+RPM -> ONLY TOOL, not going to install dependencies with it 
+Yum
+
+git pythons
+
+
+
+
+RPM VS YUM 
+
+
+brew (Homebrew package manager) -> mac os --> sudo brew intall git 
+
+macOS: Command(cmd)  (⌘) + C  -> copy the files  ls,ps,rm, mv ,cp,
+
+Standard: Ctrl + C  -> copy the files 
+
+port ( MacPorts package manager) -> mac os -> 
+
+sudo -i or sudo su -  --> to get into root user
+
+
+==================================================================================================================================
+LINUX BOOT PROCESS
+https://medium.com/@gangulysutapa96/6-stages-of-linux-boot-process-5ee84265d8a0
+
+==================================================================================================================================
+
+LINUX FILE/DIRECTORY /FOLDERS STRUCTURE
+--------------------------
+most essential directories path and devops tools which are stored in it,  that should devops remember, cos where all executable files and storage directories
+
+
+/ (root directory):
+
+The top-level directory in the Linux file system hierarchy.
+All other directories are subdirectories of the root directory.
+---
+
+🗃️ /bin: Binaries - This directory holds the essential user command binaries that all users can access.
+
+Contains essential binary executable files accessible to all users.
+Common commands like ls, cp, mv, yum apt,rm, etc., reside here. sh
+
+---
+⚙️ /etc: System Configuration - Houses the system configuration files, acting as the control panel on Linux.
+
+Contains system-wide configuration files.
+Important files like passwd (user account information), hosts (DNS resolution), sudoers (sudo configurations), and group more.
+---
+
+🏠 /home: User Home Directories - Contains the home directories for users and other accounts.
+Home directories for regular users are located here.
+Each user has a subdirectory with their username.
+---
+📁 /var: Variable Files - This is the variable data directory storing changing data like logs, mails, print spools, etc.
+and journalctl -> to check the log files in your local machine or system .
+
+Contains variable data files, such as log files (/var/log) and mail (/var/mail).
+Also includes temporary files, caches, and other variable data.
+---
+👥 /usr: User Binaries - Contains multi-user utilities, applications, and libraries.
+
+Contains user-related programs and data, usually read-only data (except for /usr/local).
+Common directories within /usr include /usr/bin, /usr/lib, /usr/share, etc.
+
+
+git 
+
+git add 
+
+ls 
+
+/bin/bash
+usr/bin/bash
+
+
+---
+
+🔧 /sbin: System Binaries - Contains the essential binaries used by the system administrator for system maintenance and troubleshooting.
+
+Similar to /bin, but it contains essential system binaries for the root user (administrative commands).
+Commands like fdisk, ifconfig, reboot, etc., are stored here.
+---
+🎁 /opt: Optional Software - Stores optional or additional software from vendors.
+cd /opt -- installing the tools ,sonarqube,tomacat, nexus and so on
+
+Typically used for the installation of optional (third-party) software.
+Some software packages, especially those not installed via the package manager, might reside here.
+--
+🔨 /srv: Service Data - This directory contains server-specific services related data.
+
+Contains site-specific data served by the system.
+For example, web server files(nginx)can be stored here.
+---
+🗑️ /tmp: Temporary Files - This directory stores temporary files created by the system and users.
+
+A temporary directory accessible to all users, where they can store temporary files.
+Files in this directory are usually deleted upon reboot.
+---
+📊 /proc: Process Information - A virtual directory detailing system and process information.
+
+A virtual filesystem that provides information about running processes and system configuration.
+It's not a real directory with disk storage but rather a dynamic interface.
+---
+
+
+💽 /dev: Device Files - Home to all device files, such as hard disks, USB, CD-ROM, etc.
+null file 
+
+Contains device files that represent hardware devices on the system.
+These files are used to interact with hardware components.
+Remember, these are just some of the essential directories. Linux has a vast file system hierarchy, and depending on your specific tasks and the distribution you are using, you may encounter additional directories or variations in their organization. Understanding these directories and their purposes will provide a solid foundation for your work as a DevOps engineer.
+
+------
+
+📚 /lib: System Libraries - Houses library files that are needed by the system and the users.
+
+📝 /mnt: Mount Directory - Used for mounting other temporary file systems.
+
+💿 /media: Removable Media - Acts as a temporary mount directory for removable devices.
+
+🚀 /boot: Boot Files - Contains boot loader related files.
+
+👑 /root: Root Home - This is the home directory for the root user.
+
+🔌 /run: Application Information - A tmpfs file system that contains application information.
+
+🧑‍🔬 /usr/local: User Local - Contains user's programs that are installed from the source.
+
+📦 /lib64: 64-bit Libraries - This is where the 64-bit library files are stored.
+
+
+
+==================================================================================================================================
+
+
+give all devops tools and  their directory path in linux 
+
+there are numerous DevOps tools available, and they can be installed in different locations in the Linux file system. The following is a list of some popular DevOps tools along with their common installation paths:
+
+tools -> executable path /bin and configuration path /etc
+
+
+Git 
+
+Path: Usually installed system-wide, binaries in /usr/bin/git and configuration files in /etc/gitconfig.
+User configuration: ~/.gitconfig.
+
+
+
+git add filename 
+
+
+
+Ansible 
+
+Path: Executable located in /usr/bin/ansible.
+Configuration: /etc/ansible/ansible.cfg.
+Playbooks and inventory files  can be stored anywhere, often in the user's working directory.
+
+
+Puppet
+
+Path: Executables located in /opt/puppetlabs/bin.
+Manifests and modules are stored in /etc/puppetlabs/code.
+
+Chef 
+
+Path: Executables located in /opt/chef/bin.
+Cookbooks and related files are stored in /etc/chef or /var/chef.
+
+
+Jenkins  -> /var/lib/jenkins/workspace
+
+Path: The installation path may vary, but commonly found in /var/lib/jenkins.
+Configuration: /etc/default/jenkins or /etc/sysconfig/jenkins.
+
+Docker
+
+Path: Executable located in /usr/bin/docker.
+Docker images and containers are stored in /var/lib/docker by default.
+
+Kubernetes (kubectl)
+
+Path: Executable located in /usr/bin/kubectl.
+Configuration: ~/.kube/config.
+
+Terraform
+
+Path: Executable located in /usr/bin/terraform.
+Configuration files can be stored in any directory, commonly in the user's working directory (terraform.tf, variables.tf, etc.).
+
+Prometheus
+
+Path: Executable located in /usr/local/bin/prometheus.
+Configuration: /etc/prometheus/prometheus.yml.
+
+Nagios
+
+Path: Executables and configuration files are commonly found in /usr/local/nagios or /etc/nagios.
+
+
+Grafana
+
+Path: The installation path may vary, but commonly found in /usr/share/grafana.
+Configuration: /etc/grafana/grafana.ini.
+
+ELK Stack (Elasticsearch, Logstash, Kibana) in AWS
+
+Path: The installation paths may vary, but configuration files and data are typically stored in /etc/ or /var/.\
+
+=================================================
+
+Navigation or dir control commands : 
+
+man -- manual page 
+
+usage: man <Linux utility or any Linux command>
+
+ex: man ls 
+
+--help 
+
+<Linux command> --help 
+
+ls --help 
+
+sudo --> super do user  --> it will grant admin access or root access  or 
+
+
+normal user : $ 
+root user : # 
+
+manjunath@Manju:~$ id -u
+1000
+manjunath@Manju:~$ sudo -i
+root@Manju:~# id -u
+0
+root@Manju:~# exit
+logout
+manjunath@Manju:~$
+
+
+pwd --> present working dir or current dir 
+
+ls --> list the files and directories or folders in the current directory 
+ls -l -> long listing the files and directories or folders in the current directory 
+
+. --> hidden files or hidden folder 
+.. -> parent hidden folder 
+
+ls -ltrh
+
+
+========
+touch  <filename>  -> to create empty file 
+
+touch file{1..500}.txt
+
+rm file{1..500}.txt
+	
+===========
+echo   --> to display or to print a line ( of content ) of a file 
+
+echo "welcome to Linux session" >> file.txt 
+
+
+echo >> file1 "5th line of code"
+  
+
+================
+
+cat --> to display the content of the file 
+
+cat 
+
+
+cat file1 fil2  > file3 
+
+===================
+
+mkdir :  create a dir or folder  or make dir 
+
+mkdir dir{1..200}
+
+
+maindir and sub dir 
+
+
+
+&& and | 
+=======
+mv : 
+
+to move object from one dir or another dir or rename the file or dir 
+
+
+mv <old file> <new file>
+
+mv <source point> <destination point>
+
+=========
+cp : 
+
+
+cp <source point> <destination point>
+
+==========
+
+process mgt commands : 
+
+80
+
+ps aux | grep -i nginx   -> process info of nginx 
+
+lsof -i :80     -> running process of port number 
+
+kill <PID>
+
+kill -9 <PID>
+
+top -> to display Linux tasks and running process 
+
+sar --> system activity report   -> used to collect the CPU,MEMORY,I/O usage (not found in bash shell)
+
+
+
+========================================
+
+wc : word count which is use to count the lines, words and characters in a file or output 
+
+tac 
+cat 
+more 
+less 
+
+head    -> display first 10 lines of the file 
+tail    -> display last 10 lines of the file 
+
+
+
+==============
+
+
+user mgt commands  : you must have root access or admin access 
+
+
+John --> 
+
+Manjunath : 
+
+Jenkins
+docker 
+
+cat /etc/passwd
+
+
+sudo useradd <username>  -> it will create user and group as well 
+
+
+sudo groupadd <groupname>  -> it will create group only , remember it won't create user 
+
+
+sudo userdel  <username>  -> to delete the user 
+
+
+sudo groupdel  <groupname> 
+
+
+
+how to add the users to a particular group and how to delete them from the group 
+
+
+sudo usermod -aG groupname username 
+
+sudo gpasswd -d username groupname 
+
+
+
+===============
+
+sudo passwd username 
+
+sudo passwd username 
+
+
+su - username   --> su --> switching or changing the user 
+
+
+
+
+
+=======================
+
+
+user/group/files permission commands or chmod commands -> change mode 
+
+user or owner
+group
+others 
+
+
+2 diff 
+
+alpha/num
+
+drwxr-xr-x  2 manjunath manjunath      4096 Aug 23 19:11  10-Cloud-Build
+-rw-r--r--  1 manjunath manjunath        10 Jun 25 14:48  2025-06-25-14-46-23
+
+
+d -> dir or folder 
+
+- ->  file 
+
+
+read 
+write 
+executable 
+
+r -> 4
+w ->2
+x -> 1 
+-  -> 0 
+
+the range 0 to 7 
+
+   user            group               others
+
+d  r w x             r - x                r-x 
+   4+2+1             4+0+1                4+0+1
+
+    7                  5                   5
+
+
+chomd 755 <filename> 
+chomd -x <filename >
+
+
+chmod 400 aws.pem
+
+
+- r-- --- --- aws.pem 
+
+
+chmod 777 filename 
+
+
+chmod 100 file1.txt
+
+1   0           0
+
+
+rwx
+
+- --x ---  ---- 
+
+- --x --- --- 1 manjunath manjunath   240 Nov  5 09:16 file1.txt
+
+chmod 672 file.txt 
+
+
+-rw-rwx-w-
+
+-rw-rwx-w- 1 manjunath manjunath   240 Nov  5 09:16 file1.txt
+
+
+=================================================================
+
+
+networking commands 
+
+cat /etc/resolve.conf   -->  to see the aws name server 
+
+dig or nslookup 
+
+
+====================
+
+vim  and nano 
+
+vi editor 
+
+vim editor 
+
+
+
+
+cut,find,awk,sed 
+
+symbolic links (softlink and hardlink)
+
+
+
+================================================
+
+
+
+cut : 
+
+the main use of command is to split or trim the lines in a file 
+
+
+
+based on character/bytes/dlimiter 
+
+1 character = 1 bytes   = same -c or -b 
+
+Delimiter = separator --> , . : ; space or - _ 
+
+
+
+cut -c 5 file1.txt 
+
+
+delimiter 
+
+1,a,20
+2,b,30
+3,c,40 
+
+
+cut -d "," -f1 <filename> or any output 
+
+1 a 20
+2 b 30
+3 c 40 
+
+cut -d " " -f3 <filename> or any output 
+
+
+1-a-20
+2-b-30
+3-c-40 
+
+cut -d "-" -f2 <filename> or any output 
+
+
+
+awk : 
+
+
+ls -la | awk '{print $1,$3,$9}'
+
+============
+
+find : 
+
+man find 
+
+options : 
+
+1. -name 
+2. -iname
+3. -type f
+4. -type d
+
+
+syntax: 
+
+find <dir path> options objectname(filename or dir name )
+
+
+how to find the largest file in the Linux machine 
+
+
+3 ways 
+
+find /home/manjunath -type f -exec du -h {} + | sort -rh | head -n 5
+
+
+
+SED  : Stream editor command 
+
+
+sed 's/oldtext/newtext/g' filename.txt   -> temporary  
+sed -i  's/oldtext/newtext/g' filename.txt    -> -i used  to make permanent changes in a file 
+
+
+sed -i 's/neo4j-server11/neo4j-server12/g' neo4j-server12-values.yaml
+
+
+======================
+
+1.symbolic links in Linux 
+
+softlink and hardlink 
+
+
+2. cronjob -> cronjob format 
+
+3.archive commands 
+
+zip,tar 
+
+
+================================
+
+
+BASH SCRIPTING : 
+===================================
+
+shell 
+
+compiler or interpreter 
+
+
+
+file.py 
+
+djfljf
+lfjelrj
+lfjelrj
+lfjelrj
+
+
+execute or run the script 
+
+
+file.sh 
+
+echo "welcome to bash scripting"
+mkdir sample_Dir
+
+
+programming : 
+
+coding   -> python,nodejs,reactjs,java,go  -> to develop a software
+
+
+scripting -> python,powershell,shell   -> automate the day to day tasks, to avoid manual intervention 
+
+shell scripting or 
+
+
+10 devops tools, 
+
+python
+java
+Jenkins
+docker 
+git
+SonarQube 
+
+devops_tools_setup.sh 
+
+======================
+
+file.doc
+file.txt
+
+file.sh    -> .sh it's not mandatory 
+file
+
+
+.py
+.java
+.fb
+.js
+
+
+=============================
+
+
+
+i want to create a dir( sonar), I need to create 2 files  with content in sonar dir and I need to create a 2 sample1 and sample2 dir in the sonar dir 
+
+
+steps to write a shell script 
+
+step1 : use any text editor VIM OR NANO , 
+
+vim file.sh   --> to start vim editor 
+
+
+command mode : non editable mode 
+
+insert mode : editable mode 
+
+
+shebang or hashbang 
+
+#!/bin/bash 
+
+echo "Hello world"
+
+
+py 
+
+a= "Hello world"
+
+print(a,type(a))
+
+
+
+to execute shell script 
+
+bash file.sh
+sh file.sh
+./file.sh 
+
+=========================
+
+
+how to run shell script in debug mode ? 
+
+
+each commands in the script will be printed on the terminal before it's executed 
+
+variables and their values will be displayed during execution 
+error messages and their details will be shown 
+
+
+bash -x file.sh  -> to run the entire script in debug mode 
+
+
+set -x    --> to start debug mode 
+
+set +x    --> to stop the debug mode 
+
+
+=================================
+
+
+
+archive / compress the files/dir 
+
+10 --> 
+
+100  --> 1000mb -1gb 
+
+zip  files.zip file1 file2 file3 file4 
+
+300mb   file.zip 
+
+unzip file.zip 
+
+
+tar  tape archive t
+
+
+tar 
+
+-c -> to create
+-v -> verbose
+-f -> to create archive file 
+
+
+
+
+
+
+10 fil
+
+
+gzip 
+
+gzip filename 
+
+gzip -d filename
+
+==========
+fs : 100gb   -> running out of storage   -> cron job --> images_cleanup.sh(docker commands , preserved  latest 2 images and delete all rest of images )  everyday at 3am 
+
+backend image : 
+
+10gb 
+10gb 
+
+9th or 10th 
+
+
+
+ssh adminuser@135.235.155.215
+
+
+==================
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+manjunath@Manju:~$
+
+
+*/23    --> minutes --> 
+
+* * * * * --> every minutes 
+
+*/23  * * * *    -> for every  23 minutes 
+
+0  */8  * * *    -> for every 8 hrs 
+
+0  8  * * *    -> at 8am 
+
+0  8-20  * * *    -> range between 8am to 8pm
+
+0 20 * * *  -> at 8pm 
+
+every month at 8pm 
+
+* * * * * ->> every minutes 
+
+0 20 
+
+
+* * 15,16 * * /acr-cleanup.h  
+
+crontab -l 
+
+crontab -e 
+crontab -r
+crontab -e -u <username>
+
+
+==============================================
+
+
+file naming convention : 
+
+
+text.sh 
+
+255 characters 
+
+alphabets, digits,dots, underscores. 
+
+
+dockerimagescleanup.sh 
+
+5356454.sh 
+
+.env 
+_env.sh 
+
+
+case sensitive  or case insensitive 
+
+mongo                 mongo 
+Mongo                 MONGO
+MONGO
+MonGo
+
+
+variables/ file name : 
+
+lowercase 
+
+dockerimagescleanup.sh
+
+snake casing 
+
+docker_images_cleanup.sh
+
+camel casing 
+
+dockerImagesCleanup.sh
+
+ec2Instance
+
+UPPERCASE
+
+DOCKERIMAGESCLEANUP.sh
+
+
+====================
+
+COMMENTS : 
+
+
+#!/bin/bash 
+
+
+# author : Manjunath
+# description : this script to install devops tools 
+
+# installing the git 
+
+sudo apt-get install git -y 
+
+java 
+//  s l c 
+
+/* 
+
+first line of code 
+2nd line of code 
+3rd line of code 
+100th line of code 
+
+*/
+
+
+bash script 
+
+# -> slc 
+
+# first line of command 
+
+for M L C 
+string = any text
+
+<<stringname 
+first line of command 
+2nd line of command 
+3rd line of command 
+stringname 
+
+
+<<manju 
+first line of command 
+2nd line of command 
+3rd line of command 
+manju
+
+
+comments are used to escape from code, the commented code will be skipped 
+
+comment part will be ignored by program interpreter 
+
+adding the comments in the code or script, which makes things easy for the programmer, while editing/modifying  code in future 
+
+
+
+# send post request to payment service 
+
+==============
+
+
+variables : it's a character, string to which we assign a value , the value which assigned can be a number, text, filename, or any other type of data 
+
+=
+
+NAME="Manjunath" 
+
+
+echo $NAME
+
+
+there are 2 types of variables 
+
+1. system pre defined variables  or system default variables , system build it variables 
+    env variables 
+2. user defined variables 
+
+
+1. system pre defined variables --> env or printenv 
+
+$HOME : the home directory of the user 
+$USER: the username of current user 
+$SHELL: /bin/bash  the path to shell 
+$PATH: usr/bin 
+
+JENKINS_HOME: /etc/lib
+PATH: 
+==============
+
+
+DB_NAME:
+DB_PASS:
+
+.env   --> env variables for your app/project 
+
+
+===========
+
+LINUX SYSTEM CONFIGURATION FILES : 
+
+ls -l 
+mkdir 
+
+echo $USER
+
+.bashrc     --> Jenkins, java,git,gradle,maven    
+
+
+.bash_profile or .profile 
+
+
+.bashrc 
+
+
+CADVISOR_HOME="/etc/lib" 
+
+===================
+
+data types : 
+
+int -> exact number or 10, 12 , 4000
+float -> 10.2 , 10.3 , it's very short decimal number 
+Boolean --> true(1) or false(0)
+string  -> "some text"
+decimal -> 4848939393939.838383838383838 , 
+double -> very big number 
+
+
+int -> exact number or 10, 12 , 4000
+string  -> "some text"
+
+
+================================
+
+
+how can you assign the predefined command or variable to variable ? 
+
+
+how can you assign the predefined variable to user defined variable ? 
+
+
+
+PLACE="Bangalore"
+
+echo $PLACE 
+
+===============
+
+
+command line argument : 
+
+values are passing through command prompt or terminal or cli during shell script execution is called command line arguments 
+
+
+
+
+./var1.sh bangalore Mumbai Chennai 
+
+$0 --> shell script name 
+$1 -> arg1 
+$2 -> arg2
+$3 -> arg3 
+$4 -> arg4    --> if you dont pass the values for arg4, then it will display nothing 
+
+
+echo $# -> no. of args that we used 
+
+echo $*  or $@ -> it will display the values that you passed from outside the script 
+
+echo $$ --> to display the process id of script 
+
+echo $? -> to check exit status or it's used to display previous command execution status (1 to 127 std error code )
+
+
+
+how can you pass the values to variables directly inside the script ? 
+
+
+#!/bin/bash
+
+NAME="John"
+
+echo $NAME
+
+=============================================
+
+
+how can you pass the values dynamically to variables apart from command line argument method 
+
+how can you ask user to enter the values dynamically 
+
+how can you pass the values to variables in interactive mode in bash script 
+
+
+
+user input or user prompt 
+
+ans : read command 
+
+
+take ATM machine  : 
+
+=====================================
+
+
+
+
+9th feb 2026 : 
+
+
+SNS  :  distributed publish-subscribe service  or fully managed pub/sub messaging service 
+
+
+
+topic : amazon-ecom application  : 
+
+--->  guru --> guru@gmail.com 
+
+
+ec2 instance in us-east-1 region is down -->  event bridge(lambda fuctions source  and destination sns  )
+
+
+=========================== 
+
+
+
+there are 2 main components in SNS 
+
+
+TOPIC  : group , just like an IAM (how we are going to create user,group, adding the user to the group)
+SUBSCRIPTION :  user or public 
+
+sms,email, other aws services, lambda, http, https 
+
+
+====================================
+
+
+create subscription ----------> ticket-booking topic 
+
+
+
+application--> sign in -----store the data in database------>subscribed to the  topic 
+
+
+application--> sign in -----store the data in database------>subscribed to the  topic 
+
+
+==========================
+
+3 tier architecture application 
+
+
+fe 
+be
+db tier 
+
+
+micro services architecture application 
+
+
+cart,
+map
+catalogue
+sidebar
+search bar 
+order
+payment
+
+
+
+
+amazon application monolithic application--> 
+
+cart,
+map
+catalogue
+sidebar
+search bar 
+order
+payment
+
+
+-----------> deploying ec2 instance 
+
+
+======================
+
+
+
+
+over the network 
+
+
+
+your device                   -->     target device, it can be diff device or any application 
+
+
+
+
+osi --> open systems interconnection , networking protocol suite 
+
+
+7 layers 
+
+amazon.com --> ip:PORT 
+
+
+network communication protocols 
+security protocols
+network monitoring protocols 
+
+HTTPS,TCP,UDP,HTTP,DNS,EHTERNET,BLUETOOTH,  
+
+each protocols have the dedicated port number 
+
+HTTPS --> 443
+
+HTTP --> 80
+
+
+
+
+7 layers 
+
+
+All People Should Try New Dominos Pizza 
+
+
+Application layer -->  UI 1st layer 
+Presentation layer  -->  authentication and authorization --> username and password --> conversion, data compression, data encryption and decryption 
+Session layer  -->  session affinity , it establishes and maintain and terminates network connections between applications or devices 
+
+banking applications :   net banking , session limit --> 1 min or 2 mins , session will terminates, 
+
+gmail applications : longer session 
+
+Transport layer   
+
+mode of transportation 
+
+flight 
+bus 
+car
+bike
+bicycle --> 
+
+
+TCP            AND                              UDP 
+one to one                             multicast or broadcast --> 
+
+data delivery guaranteed                      not guaranteed                 
+
+highly reliable                                  speed or fast(football or cricket games )  online streaming 
+mobile --> cart --> address --> payment
+
+mobile --> payment  cart --> address -->
+ 
+
+
+3 ways handshake           --> no handshake 
+
+-->  
+
+
+youtube or hotster or netflex or amazon.com 
+
+
+
+
+
+
+
+place a           -------------------------> place b 
+
+Network layer   
+
+
+mobiles --------------------> /mobiles page 
+
+cart -----------------------> /cart -->  api/v1/cart
+
+
+
+api/v1/cart
+
+
+Data link layer     --> ethernet or wifi 
+
+
+Physical layer  --> jio    -> 
+
+
+amazon.com 
+
+
+
+
+client ---> sender                                server -- receiver 
+
+person A                                           person B 
+
+
+
+====================================================
+
+
+3 tier 
+
+web tier  --> html,next js, .js --> frontend application ---> web server (httpd or nginx )   --> internet or public facing server  --> front end developers 
+app tier  --> middleware --> develop business logic --->  backend developers --> APIs or features or micro service    --> cart /api/v1/cart -> backend developers -> python,node,c++,ruby,java
+db tier   --> db server --> MySQL (product metadata),PostgreSQL(user data),Redis(caching in memory database),SQL()  --> sql and nonsql
+
+
+
+1 tier architecture ---> hosting static web application over the s3 bucket  --> is this app tier or backend logic and data base tier 
+2 tier architecture ----> hosting a web application over a VM --> web tier 
+3 tier architecture 
+multi tier architecture --> containers architecture --> micro services --> k8s or docker or docker compose 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
