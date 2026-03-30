@@ -1,1 +1,116 @@
-n+ notes
+
+
+cidr --> classless inter domain routing 
+
+subnet mask 
+
+classful 
+
+
+ip address classes : 
+
+5 types of ip address classes 
+
+32 bit -> ipv4 
+
+4 bytes 
+                                    256 256 256 = 16777216
+class a --> used in large org --> N H H H -->  1.0.0.0/8 first octet is reserved --> 1,67,77216 ip address 
+class b --> used in medium scale org --> N N H H --> 1.0.0.0/16  first and second octets are reserved --> 65536 ips or ports 
+class c --> used in small org --> N N N H --> 1.0.0.0/24 First,second and third octets are reserved --> 256 port or ips 
+
+
+class d --> used in multicast address 
+class e  --> 
+
+
+
+1 octet/byte = 8 bits = 256 ips or ports 
+
+0 1 1 0 1 0 1 0 
+
+
+10.0.0.0/16    --> 
+
+10.0.256.256  --> 65536
+
+
+10.0.1.....256.256
+
+256.256.256.256
+
+128.19.28.28/13 
+8  .8(5N+3H).28H.28H
+
+
+192.19.28.28   --> binary value 
+     15*256*256= 983040
+
+
+8 bits 
+
+192 
+
+bits :                  1   1 0   0  0      0 0  0
+value in binaries      128+ 64 + 32+ 16 + 8 +4+2+ 1   = 256 
+                       128+64          0+      0+ 0+  0+ 0 + 0 = 192
+
+
+network portion --> reserved 
+host portion
+
+sg --> 22 --> sshing --> Linux machine 
+
+100 or 200 or 65536 
+
+
+
+
+private ip address range 
+
+10.0.0.0/24
+
+/17 /18 till /32
+/15
+16
+
+
+
+
+10.0.0.1/    --> project 
+10.0.0.2/24
+10.0.0.2/24
+
+172.16.0.0  
+192.168.0.0
+
+===============
+
+
+0 t0 126
+127 to 
+
+256 
+
+
+
+cidr 
+
+/0  all ip   --> 0.0.0.0/0 --> internet facing ip 
+
+/8  2^24= 1,67 --> 198.0.0.0/8 
+/16
+/32
+
+
+
+
+conversion of ip address
+
+conversion from decimal to binary and binary to decimal 
+
+
+
+
+
+
