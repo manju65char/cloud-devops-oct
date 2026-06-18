@@ -1,0 +1,135 @@
+1. Azure Cloud Architecture
+
+Azure Cloud Architecture is the way Microsoft Azure services are organized to deliver applications, storage, networking, security, and computing resources.
+
+Basic Azure Architecture Layers:
+
+1) Azure Tenant:
+       i) Identity and access management.
+      ii) Users, groups, and applications are managed here.
+
+2) Azure Subscription:
+       i) Billing and resource management boundary.
+      ii) Resources are created under a subscription.
+
+3) Resource Group:
+       i) Logical container for resources.
+
+4) Resources: 
+       i) Virtual Machines (VMs)
+      ii) Storage Accounts
+     iii) Databases
+      iv) Virtual Networks
+       v) App Services, etc.
+Example:
+
+Tenant-->Subscription--->Resource Group ---> 1) Virtual Machine
+                                             2) Storage Account
+                                             3) SQL Database
+
+
+
+2. Difference Between Azure Tenant, Subscription, and Organization
+
+
+Azure Tenant:
+
+Purpose: identity management 
+
+contains: user, groups, apps
+
+billing: no
+
+
+
+Azure Subscription: 
+
+Purpose: Billing & Resource Management
+
+contains: Azure Resources
+
+billing: yes
+
+
+Organization:
+
+Purpose: Company/Business Entity
+
+contains: Multiple Tenants & Subscriptions
+
+billing: Managed at business level (yes)
+Identity Management
+Billing & Resource Management
+Company/Business Entity
+Contains
+Users, Groups, Apps
+Azure Resources
+Multiple Tenants & Subscriptions
+Billing
+No
+Yes
+Managed at business level
+Example
+company.onmicrosoft.com
+Pay-As-You-Go Subscription
+ABC Pvt Ltd
+Relationship
+
+
+
+3. Need for Azure Support Plan & Types
+
+
+Why Support Plan is Needed?
+
+
+   *Faster issue resolution
+
+   *Guidance from Azure experts
+   
+   *Architecture recommendations
+
+   *Reduced downtime
+
+   *Critical incident handling.
+
+
+Azure Support Plans
+
+Basic for learning ---> no support 
+
+Developer for Development and testing---> business hours
+
+Standard for Production----> 24/7
+
+Professional for large organisation-->> faster response
+
+unified for Enterprise customers--> top level support
+
+
+
+4. Importance of Azure Resource Group
+
+
+A Resource Group is a logical container that holds related Azure resources.
+
+Why Resource Groups Are Important:
+
+      1] Organize Resources
+               *Keep all project resources together.
+
+      2] Easy Management
+               *Manage VM, Storage, Database in one place.
+  
+      3] Access Control
+               *Apply Role-Based Access Control (RBAC) at Resource Group level.
+
+      4] Cost Tracking
+               *Monitor costs project-wise.
+  
+      5] Deployment Management
+               *Deploy and delete resources as a single unit.
+
+      6] Lifecycle Management
+               *When a project ends, deleting the Resource Group removes all resources inside it.
+
