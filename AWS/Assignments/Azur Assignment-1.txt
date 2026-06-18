@@ -26,7 +26,7 @@ Example:
 Tenant-->Subscription--->Resource Group ---> 1) Virtual Machine
                                              2) Storage Account
                                              3) SQL Database
-
+===================================================
 
 
 2. Difference Between Azure Tenant, Subscription, and Organization
@@ -75,7 +75,7 @@ Pay-As-You-Go Subscription
 ABC Pvt Ltd
 Relationship
 
-
+===========================================
 
 3. Need for Azure Support Plan & Types
 
