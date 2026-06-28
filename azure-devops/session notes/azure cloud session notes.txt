@@ -1,0 +1,218 @@
+
+
+
+azure architecture or azure account hierarchy 
+
+org or user name with default tenant 
+tenant 
+subscription 
+resource groups 
+  resources 
+
+
+
+azure services, to storage, hosting the applications, to build ai models and so on 
+
+
+
+free tier --> 
+student accounts 
+pay as you go --> std 
+enterprise --> azure support team 
+
+
+ your org ---------> ifi team ---------> ms team 
+
+===============
+
+
+	ms account 
+
+tenant -> directory 
+
+AWS --> IAM service --> user and access mgt, create,delete,modify and granting the resources access to the user, least privilege principle  
+
+
+ex: John needs read access to a storage account, 
+
+instance of entra ID OR AZURE AD 
+
+represents an org , manages user identities, enforces the securities, global 
+
+
+1 account --> can have multiple tenants 
+
+
+nyai  azure account  
+
+IAM 
+
+nyai tenant  
+
+ sub : nyai_tech  --> billing unit 
+ sub : turinton_tech --> 
+
+single tenant can have multiple subscriptions 
+
+sub 1 : nyai_dev
+sub 2 : nyai_stage
+sub 3 : nyai_prod 
+
+
+
+
+
+
+
+
+
+turinton tenant 
+
+==================
+
+
+under subscription 
+
+
+1 account 
+
+1 subscription 
+
+resource group : it's a logical container that groups related azure resources together 
+
+nyai_dev --> resource group -->  $300
+
+ 
+ai automation task --> resource group --> $100
+
+
+
+
+resources or all azure services 
+
+
+===================================
+
+
+aws  vpc --> virtual private cloud --> it's a network 10.0.0.0/16 main or big  network
+
+ vm db  subnet : 10.0.0.0/24  
+
+256 vm 
+3 more vms
+
+
+
+ vm  application : 10.0.0.0/27
+
+ 
+
+vm1 
+
+ip address 
+public ip  dynamic or random ip 
+private ip 10.0.0.1 or 2 or any number from 0 to 254
+
+
+
+vm2
+
+ip address 
+public ip 
+private ip
+
+
+
+azure vnet --> virtual network --> 
+
+
+8 bits binaries 0 or 1  = 1 byte or octet 
+
+
+
+=================
+
+
+vm : 
+
+
+
+subscription 
+resource group 
+
+vnet 
+
+instance type -> t2.mcro --> 1 cpu and 1 gb of ram 
+
+t2.medium 
+us-east-1
+us-west
+
+
+
+sku --> stock keeping unit --> it defines  the tier or specification of a service 
+
+azure app sku 
+
+f1 (free)
+b1 (basic)
+
+s1 std 
+p1v2 premium
+
+
+10.1.0.0/16 --> main network 10.1.0.0/17 
+
+A vnet development env
+A1 subnet : vm1 
+A2 subnet : vm2 
+A3
+
+--------
+B vnet stage env 
+B1 subnet : vm1  ping private ip Avent's vm1
+B2 subnet : 
+
+vnet peering 
+
+sender or receiver 
+
+
+hub and spokes network model or transit gateway or transit peering 
+
+
+
+20 vnets 
+
+=====
+
+
+10.1.0.0/24
+
+
+10.1.0.4
+10.1.0.any random number from 0 to 254
+
+username 
+public ip 
+pem key 
+
+
+demo vm1 private ip : 10.1.0.4
+
+demo vm2 private ip : 
+
+ping from vm2 : ping 10.1.0.4 , network connectivity from vm2 to vm1  , if there is no network connectivity, you can't transfer any data from vm2 
+
+
+
+=============
+
+
+task: 
+
+create resource group,vnet, create 2 diff subnets , create 2 diff VMs in respective subnets, and host a sample static application  via nginx server and check the networking connectivity(ping vm's private ip ) between vm1 and vm2 
+
+
+understand the vnet peering and hub and spoke model 
+
