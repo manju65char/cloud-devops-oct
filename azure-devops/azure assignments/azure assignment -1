@@ -1,0 +1,163 @@
+how to create resource group in azure?
+
+1. Sign in to the Azure portal:
+
+2. In the search bar, type Resource groups and select Resource groups.
+
+3. Click + Create.
+
+4. Fill in the required information:
+        
+          * Subscription: Select your Azure subscription.
+          * Resource group: Enter a unique name (for example, MyResourceGroup).
+          * Region: Choose the Azure region where the resource group's metadata will be stored (for example, East US or West Europe).
+          * Add Tags to organize resources by project, department, or environment.
+
+5. Click Review + create.
+
+6. After validation succeeds, click Create.
+
+==========================================================================
+
+How to create Vnet in azur?
+
+1. Azure Virtual Network (VNet)
+        
+       * Azure VNet is a private network in Microsoft Azure.
+       * It allows Azure resources like Virtual Machines, Databases, and Applications to communicate securely.
+       * It works similar to a traditional network in a data center.
+
+
+2. Steps to Create Azure VNet
+
+       * Open Azure Portal
+       * Login to Azure Portal
+       * Search Virtual Networks
+       * Select Virtual Networks
+       * Click + Create
+       * And then Configure Basic Settings (subscripition, resource group, Vnet name, region and etc..)
+
+
+3. Configure IP Address:
+
+        IP Address:
+
+        A VNet requires an IP range.
+
+              Example: 10.0.0.0/16
+
+
+
+4. Create Subnets:
+
+        Subnet Configuration
+
+        Subnet divides the VNet into smaller networks.
+
+
+        Purpose:
+
+            Web servers → WebSubnet
+            Application servers → AppSubnet
+
+
+5. Security Configuration:
+
+        Azure provides security options:
+
+                  * Network Security Group (NSG)
+                  * Controls inbound and outbound traffic.
+                  * Works like a firewall.
+
+
+6. Review and Create
+
+        Final Steps:
+
+               * Click Review + Create
+               * Azure validates settings
+               * Click Create.
+
+5. How to create a 2 different subnets?
+         
+               one subnet is defaultly created so we have create another one.
+             
+                    * click add subnet and give a name for it and check the ip range.
+
+
+
+6. Review and Create
+      
+        * Click Review + Create
+        * Azure validates the configuration.
+        * Click Create.
+
+
+============================================================================= 
+
+How to create a subnet in two different VMs?
+
+Create First VM: 
+             
+          * Search Virtual Machines
+          * Click Create → Azure Virtual Machine 
+          * Give the basic details like VM name, region, availability option, subnet, security type, image and etc..
+          * DISK : select os disk, type, and network.
+          * Click review + create.
+
+ And repeat the same process for vm2.
+
+================================================================================
+
+How to host a sample static application in in nginx server in two diff vm's?
+
+              * Download pem key and save that in terminal. (ex: filename.key)
+              * click connect and copy ssh command.
+              * And past into terminal. (ex: ssh -i <private-key-file-path> azureuser@20.41.241.103)
+              * Now change the private key file path to filename.key in command.
+              * Now update Ubuntu Package: 
+                           Run: 1]  sudo apt update
+                                2] sudo apt upgrade -y
+              * Install nginx server:
+                           Run: 1] sudo apt install nginx -y
+                                2] sudo systemctl status nginx
+              * nginx text: 
+                           Run: 1] curl ifconfig.me
+                     cope the ip address and past in chrome and check it (Welcome to nginx).
+
+
+Create Sample Application:
+
+
+                       Go to Nginx web directory:
+                                * Enter the command  cd /var/www/html
+                              
+                       Create new application:
+                                * Enter the command sudo nano index.html and add some sample html.
+
+                       Restart Nginx: 
+                                * sudo systemctl restart nginx
+
+                       Access Application
+                                * Open browser and past the public ip.
+
+
+==================================================================================
+
+Architecture Example:
+
+
+                Azure VNet
+                    |
+                 Subnet
+                    |
+              Ubuntu VM
+                    |
+              Nginx Server
+                    |
+          Static Web Application
+                    |
+          Users Access Website
+
+ 
+=====================================================================================
