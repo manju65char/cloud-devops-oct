@@ -1,0 +1,40 @@
+| Command                                            | Purpose                                       |
+| -------------------------------------------------- | --------------------------------------------- |
+| `git config --global user.name "Your Name"`        | Set your Git username.                        |
+| `git config --global user.email "you@example.com"` | Set your Git email.                           |
+| `git config --list`                                | View Git configuration.                       |
+| `git init`                                         | Create a new Git repository.                  |
+| `git clone <repository-url>`                       | Download a repository from GitHub.            |
+| `git status`                                       | Show the current state of your repository.    |
+| `git add <file>`                                   | Stage a specific file.                        |
+| `git add .`                                        | Stage all changed files.                      |
+| `git commit -m "message"`                          | Save staged changes with a message.           |
+| `git log`                                          | View commit history.                          |
+| `git log --oneline`                                | Show condensed commit history.                |
+| `git diff`                                         | Show unstaged changes.                        |
+| `git diff --staged`                                | Show staged changes.                          |
+| `git branch`                                       | List local branches.                          |
+| `git branch <branch-name>`                         | Create a new branch.                          |
+| `git checkout <branch-name>`                       | Switch to a branch.                           |
+| `git checkout -b <branch-name>`                    | Create and switch to a new branch.            |
+| `git switch <branch-name>`                         | Modern way to switch branches.                |
+| `git switch -c <branch-name>`                      | Create and switch to a new branch.            |
+| `git merge <branch-name>`                          | Merge a branch into the current branch.       |
+| `git rebase <branch-name>`                         | Reapply commits on top of another branch.     |
+| `git remote -v`                                    | Show connected remote repositories.           |
+| `git remote add origin <repository-url>`           | Connect a local repository to GitHub.         |
+| `git push origin <branch-name>`                    | Upload commits to GitHub.                     |
+| `git push -u origin main`                          | Push and set the default upstream branch.     |
+| `git pull origin <branch-name>`                    | Download and merge changes from GitHub.       |
+| `git fetch`                                        | Download changes without merging.             |
+| `git stash`                                        | Temporarily save uncommitted changes.         |
+| `git stash pop`                                    | Restore the most recent stash.                |
+| `git restore <file>`                               | Discard changes in a file.                    |
+| `git restore --staged <file>`                      | Unstage a file.                               |
+| `git rm <file>`                                    | Remove a file from Git and the filesystem.    |
+| `git mv <old> <new>`                               | Rename or move a file.                        |
+| `git tag <tag-name>`                               | Create a tag (e.g., `v1.0`).                  |
+| `git reset --soft HEAD~1`                          | Undo the last commit but keep changes staged. |
+| `git reset --hard HEAD~1`                          | Undo the last commit and discard changes.     |
+| `git clean -fd`                                    | Remove untracked files and directories.       |
+| `git help <command>`                               | Show help for a Git command.                  |
