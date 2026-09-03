@@ -1,0 +1,38 @@
+| Command                                            | Purpose                                                           |
+| -------------------------------------------------- | ----------------------------------------------------------------- |
+| `git init`                                         | Initialize a new Git repository.                                  |
+| `git clone <repo-url>`                             | Copy an existing repository to your local machine.                |
+| `git status`                                       | Show the current status of files (modified, staged, untracked).   |
+| `git add <file>`                                   | Stage a specific file for the next commit.                        |
+| `git add .`                                        | Stage all new and modified files.                                 |
+| `git commit -m "message"`                          | Save staged changes with a commit message.                        |
+| `git log`                                          | Display commit history.                                           |
+| `git log --oneline`                                | Show a compact version of commit history.                         |
+| `git diff`                                         | Show changes not yet staged.                                      |
+| `git diff --staged`                                | Show staged changes before committing.                            |
+| `git branch`                                       | List all local branches.                                          |
+| `git branch <branch-name>`                         | Create a new branch.                                              |
+| `git checkout <branch-name>`                       | Switch to an existing branch.                                     |
+| `git checkout -b <branch-name>`                    | Create and switch to a new branch.                                |
+| `git switch <branch-name>`                         | Modern way to switch branches.                                    |
+| `git switch -c <branch-name>`                      | Create and switch to a new branch.                                |
+| `git merge <branch-name>`                          | Merge a branch into the current branch.                           |
+| `git rebase <branch-name>`                         | Reapply commits on top of another branch.                         |
+| `git stash`                                        | Temporarily save uncommitted changes.                             |
+| `git stash pop`                                    | Restore the most recently stashed changes.                        |
+| `git remote -v`                                    | View configured remote repositories.                              |
+| `git remote add origin <url>`                      | Add a remote repository.                                          |
+| `git fetch`                                        | Download changes from the remote without merging.                 |
+| `git pull`                                         | Fetch and merge changes from the remote repository.               |
+| `git push`                                         | Upload local commits to the remote repository.                    |
+| `git push -u origin <branch>`                      | Push a branch and set it as the default upstream.                 |
+| `git reset --soft HEAD~1`                          | Undo the last commit but keep changes staged.                     |
+| `git reset --hard HEAD~1`                          | Remove the last commit and discard changes. **Use with caution.** |
+| `git revert <commit-id>`                           | Create a new commit that undoes a previous commit.                |
+| `git rm <file>`                                    | Remove a file from Git and the working directory.                 |
+| `git mv <old> <new>`                               | Rename or move a file.                                            |
+| `git tag <tag-name>`                               | Create a tag for a release or version.                            |
+| `git show <commit-id>`                             | Display details of a commit.                                      |
+| `git config --global user.name "Your Name"`        | Set your Git username.                                            |
+| `git config --global user.email "you@example.com"` | Set your Git email address.                                       |
+| `git config --list`                                | Display current Git configuration.                                |
