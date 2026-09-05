@@ -216,3 +216,62 @@ create resource group,vnet, create 2 diff subnets , create 2 diff VMs in respect
 
 understand the vnet peering and hub and spoke model 
 
+
+==============================
+
+
+5th sep 2026
+git 
+
+ cd e-commerce-web-app/
+ 2009  ls
+ 2010  git branch
+ 2011  ls
+ 2012  git status
+ 2013  cd ..
+ 2014  ls
+ 2015  touch test.txt
+ 2016  ls
+ 2017  git status
+ 2018  ls
+ 2019  cd e-commerce-web-app/
+ 2020  ls
+ 2021  touch test-new.txt
+ 2022  ls
+ 2023  git status
+ 2024  git add test-new.txt
+ 2025  git status
+ 2026  git restore --staged test-new.txt
+ 2027  git status
+ 2028  git add test-new.txt
+ 2029  git status
+ 2030  git commit -m "ticketnumber: added the test-new.txt"
+ 2031  git status
+ 2032  ls
+ 2033  git status
+ 2034  git log --oneline
+ 2035  git push origin dev
+ 2036  git status
+ 2037  git log
+ 2038  git log
+ 2039  git status
+ 2040  ls
+ 2041  git status
+ 2042  echo "added 1st line from local machine" >> test-new.txt
+ 2043  git status
+ 2044  git add . ; git commit -m "added a new line in the test new file"
+ 2045  git status
+ 2046  git push origin dev
+ 2047  git pull origin main
+ 2048  git pull origin dev
+ 2049  ls
+ 2050  cat test-new.txt
+ 2051  git config pull.rebase false
+ 2052  git status
+ 2053  git pull origin dev
+ 2054  vim test-new.txt
+ 2055  git status
+ 2056  git add . ; git commit -m "my 1st is finalized from local machine" ; git push origin dev
+ 2057  history
+manjunath@Manju:~/azure-devops/e-commerce-web-app$
+
